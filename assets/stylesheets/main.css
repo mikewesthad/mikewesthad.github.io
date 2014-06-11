@@ -60,7 +60,7 @@ table {
 
 .container {
   margin: 0 auto;
-  width: 960px;
+  width: 95%;
   background: #fff;
 }
 
@@ -81,13 +81,13 @@ p {
   Header
 */
 .primary-header {
-  padding-top: 22px;
+  position: relative;
 }
 
 .logo {
-  font: 200 44px/44px "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 200 4vw/4vw "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
-  letter-spacing: -5px;
+  letter-spacing: -0.4vw;
   font-style: italic;
   text-transform: lowercase;
 }
@@ -108,16 +108,17 @@ p {
 }
 
 .nav {
-  margin-top: 20px;
-  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
   text-align: right;
 
 }
 .nav li {
-  font: 300 16px/16px "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 1vw/1vw "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
-  letter-spacing: -2px;
-  padding: 0 5px 2px 5px;
+  letter-spacing: -0.1vw;
+  padding: 0 0.2vw 0 0.2vw; /* probably not a good idea */
   border-bottom: 1px solid #120020;
   border-top: 1px solid #120020;
 }
@@ -148,17 +149,17 @@ p {
 */
 footer {
   width: 100%;
-  font: 300 16px/16px "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: -2px;
+  font: 300 1vw/1vw "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.1vw;
   text-transform: lowercase;  
   
 }
 footer .copywrite { 
   font-weight: 400;
-  font-size: 12px;
-  line-height: 12px; 
+  font-size: 0.7vw;
+  line-height: 0.7vw;
   font-style: italic;
-  letter-spacing: -1px;
+  letter-spacing: -0.1vw;
   vertical-align: top;
 }
 footer .social-media {
@@ -191,6 +192,55 @@ footer a:active {
 /*
   Projects page
 */
+
+.grid {
+  width: 100%;
+}
+
+.grid-element {
+  width: 33%;
+  display: inline-block;
+}
+
+.grid-element img {
+  width: 100%;
+  display: inline-block;
+
+  /* Forces the image to the top of the figure, so that they are exactly the same size */
+  vertical-align: top;  
+}
+
+.grid-divider {
+  width: 0.5%;
+  display: inline-block;
+}
+
+.grid-element figure {
+  width: 100%;
+  position: relative;
+}
+
+.grid-element img:hover {
+  opacity: 0.5;
+}
+
+.grid-element figcaption {
+  width: 100%;  
+  height: 3vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;  
+  background-color: #000;
+  color: #fff;
+  font: 200 2vw/2.5vw "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: lowercase;
+  letter-spacing: -0.2vw;
+  text-align: center;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+
 .img-grid {
   margin-left: -5px; /* This is to make the edges of the grid line up with the header and footer */
   margin-right: -5px;
@@ -226,6 +276,7 @@ footer a:active {
   opacity: 0.75;
   text-decoration: none;
 }
+
 
 
 /* 
