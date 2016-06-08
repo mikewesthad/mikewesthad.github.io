@@ -411,3 +411,13 @@ footer a:active {
   opacity: 0.75;
   text-decoration: none;
 }
+
+/*
+  Toast  
+*/
+.toast {
+  width: 400px !important;
+}
+.toast-message {
+  font: 300 18px "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
