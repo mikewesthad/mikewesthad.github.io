@@ -1,0 +1,201 @@
+<p>This is a series of blog posts about creating modular worlds with tilemaps in the
+  <a href="http://phaser.io/">Phaser 3</a> game engine. If you haven’t, check out the first
+  <a href="https://medium.com/@michaelwesthadley/modular-game-worlds-in-phaser-3-tilemaps-1-958fc7e6bbd6">post</a> where we used static tilemaps to create a Pokémon-style game world. In this post, we’ll dive into dynamic tilemaps
+  and create a puzzle-y platformer where you can draw platforms to help get around obstacles:</p>
+<figure>
+  <img alt="" src="https://cdn-images-1.medium.com/max/790/1*gDH7ngacTtHrHwvP0aZz7w.gif">
+  <figcaption>
+    <em>Final example that we’ll create</em>
+  </figcaption>
+</figure>
+<p>In the next posts in the series, we’ll create a procedural dungeon world and integrate
+  <a href="http://brm.io/matter-js/">Matter.js</a> to create a wall-jumping platformer.</p>
+<p>Before we dive in, all the source code and assets that go along with this post can be found in
+  <a href="https://github.com/mikewesthad/phaser-3-tilemap-blog-posts/tree/master/examples/post-2">this repository</a>.</p>
+<h3>Intended Audience</h3>
+<p>This post will make the most sense if you have some experience with JavaScript (classes, arrow functions &amp; modules),
+  Phaser and the
+  <a href="https://www.mapeditor.org/">Tiled</a> map editor. If you don’t, you might want to start at the beginning of the
+  <a href="https://medium.com/@michaelwesthadley/modular-game-worlds-in-phaser-3-tilemaps-1-958fc7e6bbd6">series</a>, or continue reading and keep Google, the Phaser
+  <a href="https://phaser.io/tutorials/making-your-first-phaser-3-game">tutorial</a> and the Phaser
+  <a href="https://labs.phaser.io/">examples</a> &amp;
+  <a href="https://photonstorm.github.io/phaser3-docs/index.html">documentation</a> handy.</p>
+<p>Alright, Let’s get into it!</p>
+<h3>The Tilemap API</h3>
+<p>Before we build the platformer, let’s start with a bird’s-eye view of the tilemap API. We talked about the following bits
+  last time:</p>
+<ul>
+  <li>
+    <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.Tilemap.html">Tilemap</a>
+  </li>
+  <li>
+    <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.Tileset.html">Tileset</a>
+  </li>
+  <li>
+    <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.StaticTilemapLayer.html">StaticTilemapLayer</a>
+  </li>
+</ul>
+<p>In this post, we’ll dive into two new pieces of the API:</p>
+<ul>
+  <li>
+    <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.DynamicTilemapLayer.html">DynamicTilemapLayer</a>
+  </li>
+  <li>
+    <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.Tile.html">Tile</a>
+  </li>
+</ul>
+<p>A Tilemap isn't a display object. It holds data about the map and can contain one or more layers, which are the display objects
+  that actually render Tile objects. They come in two flavors: StaticTilemapLayer &amp; DynamicTilemapLayer. A StaticTilemapLayer
+  is fast, but its tiles can't be modified. A DynamicTilemapLayer trades some speed for the flexibility and power of manipulating
+  individual tiles.</p>
+<p>Static and dynamic layers share much of the same API. They both have methods for checking whether a tile exists (e.g. hasTileAt).
+  They both have methods for getting access to tiles in the map (getTileAt,findTile, forEachTile, etc.). Dynamic layers have
+  a set of additional methods for adding, removing, randomizing, etc. tiles within the layer (e.g. putTileAt, removeTileAt,
+  randomize, etc.).</p>
+<p>The tilemap API is flexible, so you can choose the right tool for the job. You can mix static and dynamic layers together
+  in the same map. You can also convert a dynamic layer into a static layer, allowing you to generate a level on the fly
+  and then optimize it.</p>
+<h3>Painting Tiles</h3>
+<p>For the first example, we’ll load up a level made with Tiled and then paint &amp; erase tiles on the fly. We couldn’t use
+  static layers here, so we’ll need to reach for dynamic layers.</p>
+<figure>
+  <img alt="" src="https://cdn-images-1.medium.com/max/790/1*B8V3wwnoCR584DhYKFAj4A.gif">
+  <figcaption>
+    <em>Tileset by 0x72 under CC-0, </em>
+    <a href="https://0x72.itch.io/16x16-industrial-tileset">
+      <em>https://0x72.itch.io/16x16-industrial-tileset</em>
+    </a>
+  </figcaption>
+</figure>
+<p>We set up dynamic layers in the same way as static layers, except using
+  <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.Tilemap.html#createDynamicLayer__anchor">map.createDynamicLayer</a> instead of
+  <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.Tilemap.html#createStaticLayer__anchor">map.createStaticLayer</a>:</p>
+<a href="https://medium.com/media/1d8e80ada47f606dc87004b654128ad0/href">https://medium.com/media/1d8e80ada47f606dc87004b654128ad0/href</a>
+<p>Once you’ve got a dynamic layer loaded up, you can start manipulating tiles using the
+  <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.DynamicTilemapLayer.html">DynamicTilemapLayer API</a>:</p>
+<a href="https://medium.com/media/86bd461caf54c4076d6b314bcc8144e6/href">https://medium.com/media/86bd461caf54c4076d6b314bcc8144e6/href</a>
+<p>The tilemap layer (and tilemap) methods that get or manipulate tiles often come in pairs. One method — like
+  <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.DynamicTilemapLayer.html#putTileAt__anchor">putTileAt</a> - will operate on tile grid units, e.g. (0, 2) would correspond to the first column and third row of the
+  layer. The other method - like
+  <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.DynamicTilemapLayer.html#putTileAtWorldXY__anchor">putTileAtWorldXY</a> - will operate in world pixel units, making it easier to do things like find which tile is under the
+  mouse. There are also methods for converting from tile grid units to world pixel coordinates and vice versa:
+  <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.DynamicTilemapLayer.html#worldToTileXY__anchor">worldToTileXY</a>,
+  <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.DynamicTilemapLayer.html#tileToWorldXY__anchor">tileToWorldXY</a>.</p>
+<p>Putting these methods together with Phaser input, we can draw tiles in a layer with the mouse:</p>
+<a href="https://medium.com/media/94ddc41c27679c643593cf0697b7e29e/href">https://medium.com/media/94ddc41c27679c643593cf0697b7e29e/href</a>
+<p>The following example puts all of this together and allows you to paint tiles by clicking and erase tiles by clicking while
+  holding shift. worldToTileXY &amp; tileToWorldXY are used to create a simple graphic overlay to visualize which tile the
+  mouse is currently over.</p>
+<p>Note: you’ll want to click on the “Edit on CodeSandbox” button and check out the code in full screen where you can see all
+  the files easily.</p>
+<a href="https://medium.com/media/252d8cae8d9a4436eb353543c834015a/href">https://medium.com/media/252d8cae8d9a4436eb353543c834015a/href</a>
+<h3>Modularizing Our Code</h3>
+<p>Adding or removing individual tiles is pretty easy, so let’s step up the complexity and build the foundations of a platformer:</p>
+<figure>
+  <img alt="" src="https://cdn-images-1.medium.com/max/790/1*tc54eGD6Rh4-koyHhxMoGQ.gif">
+</figure>
+<p>Thus far, we’ve gotten up and running quickly with Phaser using a single file that has preload, setup and update functions.
+  That's great for simple examples, but becomes a nightmare once you get to anything moderately complex.</p>
+<p>To build our platforming foundation, we want to split up that monolithic file structure into easier-to-digest, isolated files
+  called “modules.” There are a lot of reasons go modular with your code. If used well, they help create portable &amp; reusable
+  chunks of code that are easier to think about. If you aren’t familiar with modules, check out the
+  <a href="https://eloquentjavascript.net/10_modules.html">modules chapter</a> from
+  <em>Eloquent JavaScript</em> or
+  <a href="https://blog.cloud66.com/an-overview-of-es6-modules-in-javascript/">this overview</a>.</p>
+<p>If you are using a modern browser (roughly anything late 2017 onward), you can use modules in your project (without needing
+  webpack, parcel, etc.) by adding the type="module" attribute in your HTML like this:</p>
+<a href="https://medium.com/media/e4b06e56c7ee1387cc7bcfc163289f00/href">https://medium.com/media/e4b06e56c7ee1387cc7bcfc163289f00/href</a>
+<p>(Note: you won’t see this in the CodeSandbox demos since they use the
+  <a href="https://parceljs.org/">Parcel bundler</a> to enable module support, but you will see it in the
+  <a href="https://github.com/mikewesthad/phaser-3-tilemap-blog-posts/tree/master/examples/post-2">source code</a> for this series.)</p>
+<p>Inside of index.js, you can now
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import">import</a> functions, objects, or primitive values from other files that have at least one
+  <a href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export">export</a>. import and export provide ways for us to split our single file code into separate files. With that in mind,
+  here's what our new project structure looks like:</p>
+<figure>
+  <img alt="" src="https://cdn-images-1.medium.com/max/300/1*7jHWzPxXCLaxs2gJijrJCQ.png">
+</figure>
+<a href="https://medium.com/media/42cd6d8bfa5000b17c5e52d6e04ce7f1/href">https://medium.com/media/42cd6d8bfa5000b17c5e52d6e04ce7f1/href</a>
+<p>Check out the code below, starting with index.js. From there, when you see an import, look at the file that's being referenced
+  to follow the thread. This will be the basis we build upon for the next section.</p>
+<a href="https://medium.com/media/2226eb2dc052b79479ced2dd593b97b9/href">https://medium.com/media/2226eb2dc052b79479ced2dd593b97b9/href</a>
+<p>Breaking down every line of code here is a bit out of the scope of the post, but let’s look at a trimmed down version of
+  player.js before moving on:</p>
+<a href="https://medium.com/media/2131b7a03279a3bf9a4b5931762f502b/href">https://medium.com/media/2131b7a03279a3bf9a4b5931762f502b/href</a>
+<p>This sets up an important pattern by letting us separate the bulk of the player logic from platformer-scene.js. The scene
+  just has to worry about how the player interacts with the rest of the world. As long as we call updateand destroy at the
+  right times, we could even bring this player file over to a completely separate project and it would work fine.</p>
+<p>It’s also worth noting that this class sets up a pattern that we’ll use again in the future. player.js exports a class that
+  doesn’t extend Phaser.GameObjects.Sprite. Instead, it embraces a more flexible
+  <a href="http://gameprogrammingpatterns.com/component.html">component pattern</a> where Player has a sprite property rather than Player itself being a sprite.</p>
+<p>There’s a lot more that we could do to make this code more modular (e.g. taking advantage of Phaser’s event system, see
+  <a
+    href="https://github.com/samme/phaser-plugin-update">samme/phaser-plugin-update</a>, or separating the movement logic from the animation), but this is modular enough without
+  introducing too many new concepts.</p>
+<h3>The Platformer</h3>
+<p>Whew, we’ve got a template that we can build upon now. Let’s turn back to the idea of a platformer where you can draw tiles
+  to get around obstacles:</p>
+<figure>
+  <img alt="" src="https://cdn-images-1.medium.com/max/790/1*gDH7ngacTtHrHwvP0aZz7w.gif">
+</figure>
+<p>There are two important tilemap-specific extensions to the code from the previous section that we should break down:</p>
+<ol>
+  <li>Painting colliding tiles</li>
+  <li>Adding spikes with proper hitboxes and logic</li>
+</ol>
+<p>First up, painting tiles. This is similar to previous code, but with the added wrinkle that we want the tiles that we add
+  to be colliding, so that the player can land on them. putTileAtWorldXY will return the
+  <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.Tile">Tile</a> object that is being manipulated. Tile objects are pretty simple. They hold the index and position of the tile
+  that they render, along with some physics information. We can use tile.setCollision to enable collisions:</p>
+<a href="https://medium.com/media/e2ce4b09198d81e27b920af543647b44/href">https://medium.com/media/e2ce4b09198d81e27b920af543647b44/href</a>
+<p>Tiles have other useful properties &amp; methods. tile.x and tile.y are the position in grid units. tile.getLeft(), tile.getBottom(),
+  tile.getCenterX(), etc. will give you the position in world pixel units. Check out the
+  <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.Tile">docs</a> for more information.</p>
+<p>Perfect, we can paint tiles now. But we’ve got a spike problem:</p>
+<figure>
+  <img alt="" src="https://cdn-images-1.medium.com/max/790/1*KzPiGzqnBorKdXy_4Xd5eA.gif">
+</figure>
+<p>One of the arcade physics (AP) limits in Phaser is that the physics body of colliding tiles is forced to be a rectangle that
+  matches the tile width and tile height. Our spike is only 6px tall, but it’s given a 32px x 32px hitbox. If we load up
+  the map and render the colliding tiles using this.groundLayer.renderDebug, the issue is more apparent:</p>
+<figure>
+  <img alt="" src="https://cdn-images-1.medium.com/max/756/1*em4wU0VMhrwblsOiciO_7g.gif">
+</figure>
+<p>There are a few ways to solve this. We could switch to using Matter.js for physics, but that’s overkill. Instead, let’s convert
+  the spikes from tiles into sprites, which we can give custom sized physics bodies. (…which also gives us a convenient excuse
+  to look deeper at the tilemap API!)</p>
+<p>Tilemaps have methods for turning Tiled objects and tiles into sprites:
+  <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.Tilemap.html#createFromObjects__anchor">createFromObjects</a> &amp;
+  <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.Tilemap.html#createFromTiles__anchor">createFromTiles</a> respectively. You can these to visually lay out where your game entities should be - e.g. place Tiled
+  objects where enemies should be in your level and then turn them into proper sprites when your game boots up. Here's a
+  diagrammed
+  <a href="https://labs.phaser.io/edit.html?src=src%5Cgame%20objects%5Ctilemap%5Cstatic%5Ccreate%20from%20objects.js&amp;v=3.9.0">Phaser example</a> that uses this strategy to replace Tiled objects with animated coin sprites:</p>
+<figure>
+  <img alt="" src="https://cdn-images-1.medium.com/max/1024/1*as6XVjmqc7YogHXJtFUPcg.gif">
+  <figcaption>
+    <em>The left side is the Phaser example running in the browser and the right side is Tiled. Note how width/height/flip etc.
+      are copied over to the animated coin sprites.</em>
+  </figcaption>
+</figure>
+<p>In the context of our code, turning spikes into sprites is a little more complicated, so we can roll our own custom version
+  of tile → sprite logic by looping over all the Tile objects in a layer using
+  <a href="https://photonstorm.github.io/phaser3-docs/Phaser.Tilemaps.DynamicTilemapLayer.html#forEachTile__anchor">forEachTile</a>:</p>
+<a href="https://medium.com/media/5fa6e23800cb3b00b345fcb660bad173/href">https://medium.com/media/5fa6e23800cb3b00b345fcb660bad173/href</a>
+<p>And we’ll end up with nice hitboxes like:</p>
+<figure>
+  <img alt="" src="https://cdn-images-1.medium.com/max/756/1*Nm2nXVw5MJtCgnnSG8ERrg.gif">
+</figure>
+<p>Now for everything in context, where we reset the game when the player touches the spikes:</p>
+<a href="https://medium.com/media/db1c5be5c1658abe947c9c85564ecfb6/href">https://medium.com/media/db1c5be5c1658abe947c9c85564ecfb6/href</a>
+<h3>Up Next</h3>
+<p>Stay tuned. In the next two posts in the series, we’ll create a procedural dungeon with dynamic tilemaps and integrate
+  <a
+    href="http://brm.io/matter-js/">Matter.js</a> to create a wall-jumping platformer.</p>
+<p>Thanks for reading, and if there’s something you’d like to see in future posts, let me know!</p>
+<h3>About Me</h3>
+<p>I’m a creative developer &amp; educator. I wrote the Tilemap API for Phaser 3 and created a ton of guided examples, but I
+  wanted to collect all of that information into a more guided and digestible format so that people can more easily jump
+  into Phaser 3. You can see more of my work and get in touch
+  <a href="https://www.mikewesthad.com/">here</a>.</p>
+<img src="https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=3d68e73d494a" width="1"
+  height="1">
