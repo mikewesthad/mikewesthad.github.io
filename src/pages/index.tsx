@@ -4,7 +4,7 @@ const IndexPage = () => {
   return (
     <main>
       <title>mikewesthad</title>
-      <h1>mikewesthad</h1>
+      <h1>mikewesthad!</h1>
       <p>Hi, I’m Mike Hadley.</p>
       <p>
         I’m a developer, educator and artist who translates creative ideas into code and teaches

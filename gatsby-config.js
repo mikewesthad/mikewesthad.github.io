@@ -10,6 +10,7 @@ module.exports = {
         trackingId: "UA-51816945-1",
       },
     },
+    `gatsby-plugin-typescript`,
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
