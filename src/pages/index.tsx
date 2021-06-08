@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home">
+    <Layout pageTitle="About">
       <StaticImage
         src="../images/mike-hadley-profile.jpg"
         alt="Mike Hadley"
