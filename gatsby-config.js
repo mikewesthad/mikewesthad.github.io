@@ -19,7 +19,14 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/layout.tsx"),
+        },
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
