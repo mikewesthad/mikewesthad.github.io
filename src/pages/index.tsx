@@ -16,8 +16,8 @@ const IndexPage = () => {
       ></StaticImage>
       <p>Hi, I’m Mike Hadley.</p>
       <p>
-        I’m a <Link to="">developer</Link>, <Link to="">educator</Link> and{" "}
-        <Link to="">artist</Link> who translates creative ideas into code and teaches others how to
+        I’m a <Link to="/">developer</Link>, <Link to="/">educator</Link> and{" "}
+        <Link to="/">artist</Link> who translates creative ideas into code and teaches others how to
         do the same. My mission is to make the world of technology more accessible – both in terms
         of who has access to learning materials as well as through introducing people to the
         creative side of technology.
