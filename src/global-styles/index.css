@@ -1,0 +1,91 @@
+:root {
+  --deep-purple: hsl(297, 100%, 34%);
+  --dark-blue: hsl(196, 100%, 37%);
+  --dark-yellow: hsl(57, 100%, 43%);
+  --fire-orange: hsl(25, 100%, 42%);
+  --red-pink: hsl(344, 98%, 60%);
+  --bright-green: hsl(172, 100%, 41%);
+
+  --big-john-font-stack: "Big John", sans-serif;
+  --raleway-font-stack: "Raleway", sans-serif;
+}
+
+html {
+  min-height: 100%;
+  overflow-y: scroll;
+  font-size: 137.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+  font-family: var(--raleway-font-stack);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #cecece;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #af86b2;
+}
+
+body::-webkit-scrollbar-corner {
+  background: transparent;
+}
