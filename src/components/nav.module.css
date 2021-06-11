@@ -1,0 +1,33 @@
+.nav {
+  /* font-family: TODO; */
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 4rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.nav:after {
+  /* content: "";
+  width: 100vw;
+  border-bottom: 3px solid #f7f6eb;
+  position: absolute;
+  top: 100%; */
+}
+
+.navLogo {
+  font-size: 1.81rem;
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navList li {
+}

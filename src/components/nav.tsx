@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
+import { nav, navList, navLogo } from "./nav.module.css";
 
 function Nav() {
   return (
-    <nav>
-      <Link to="/">mikewesthad</Link>
-      <ul>
+    <nav className={nav}>
+      <Link to="/" className={navLogo}>
+        mikewesthad
+      </Link>
+      <ul className={navList}>
         <li>
           <Link to="/">About</Link>
         </li>
