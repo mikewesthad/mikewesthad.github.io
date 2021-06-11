@@ -1,6 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Nav from "./nav";
+import { layout, layoutContents } from "./layout.module.css";
+import Footer from "./footer";
 
 type LayoutProps = {
   pageTitle: string;
@@ -8,21 +10,13 @@ type LayoutProps = {
 };
 
 function Layout({ pageTitle, children }: LayoutProps) {
-  const year = new Date().getFullYear();
   return (
-    <main>
+    <div className={layout}>
       <Helmet titleTemplate="mikewesthad — %s" title={pageTitle} />
       <Nav />
-      {children}
-      <footer>
-        <div>&copy; Michael West Hadley {year}</div>
-        <ul>
-          <li>email</li>
-          <li>github</li>
-          <li>linkedin</li>
-        </ul>
-      </footer>
-    </main>
+      <main className={layoutContents}>{children}</main>
+      <Footer />
+    </div>
   );
 }
 
