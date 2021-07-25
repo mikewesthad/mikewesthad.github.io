@@ -9,7 +9,7 @@ interface NavLinkProps {
   exact?: boolean;
 }
 
-function NavLink({ href, children, exact = true }: NavLinkProps) {
+function NavLink({ href, children, exact = false }: NavLinkProps) {
   const { pathname } = useRouter();
   const isActive = exact ? pathname === href : pathname.startsWith(href);
   let className = `unstyled-link ${css.navLink}`;
@@ -29,10 +29,12 @@ function Nav() {
       </Link>
       <ul className={css.navList}>
         <li>
-          <NavLink href="/">About</NavLink>
+          <NavLink href="/" exact={true}>
+            About
+          </NavLink>
         </li>
         <li>
-          <NavLink href="/work">Work</NavLink>
+          <NavLink href="/portfolio">Portfolio</NavLink>
         </li>
         <li>
           <NavLink href="/blog">Blog</NavLink>
