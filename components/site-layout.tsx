@@ -9,12 +9,13 @@ type SiteLayoutProps = {
   children: React.ReactNode;
 };
 
-function Layout({ pageKey, children }: LayoutProps) {
+const scrollToTopLeft = () => window.scrollTo(0, 0);
+
 function SiteLayout({ pageKey, children }: SiteLayoutProps) {
   return (
     <div className={css.layout}>
       <Nav />
-      <AnimatePresence exitBeforeEnter initial={false} onExitComplete={() => window.scrollTo(0, 0)}>
+      <AnimatePresence exitBeforeEnter initial={false} onExitComplete={scrollToTopLeft}>
         <motion.div
           key={pageKey}
           className={css.layoutContents}
