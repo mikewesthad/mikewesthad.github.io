@@ -1,8 +1,10 @@
 import * as React from "react";
+import { GetStaticProps } from "next";
+import { getAllProjects } from "../lib/api";
 import Link from "../components/link";
 import PageTitle from "../components/page-title";
 
-const WorkPage = () => {
+const PortfolioPage = () => {
   return (
     <main>
       <PageTitle>Work</PageTitle>
@@ -17,4 +19,4 @@ const WorkPage = () => {
   );
 };
 
-export default WorkPage;
+export default PortfolioPage;
