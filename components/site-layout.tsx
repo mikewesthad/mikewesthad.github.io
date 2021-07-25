@@ -4,12 +4,13 @@ import Footer from "./footer";
 import css from "./site-layout.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
 
-type LayoutProps = {
+type SiteLayoutProps = {
   pageKey: string;
   children: React.ReactNode;
 };
 
 function Layout({ pageKey, children }: LayoutProps) {
+function SiteLayout({ pageKey, children }: SiteLayoutProps) {
   return (
     <div className={css.layout}>
       <Nav />
@@ -30,5 +31,5 @@ function Layout({ pageKey, children }: LayoutProps) {
   );
 }
 
-export default Layout;
-export type { LayoutProps };
+export default SiteLayout;
+export type { SiteLayoutProps };
