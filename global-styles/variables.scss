@@ -1,0 +1,46 @@
+:root {
+  --deep-purple: #a500ad;
+  --dark-blue: #008abd;
+  --dark-yellow: hsl(57, 100%, 43%);
+  --fire-orange: hsl(25, 100%, 42%);
+  --red-pink: hsl(344, 98%, 60%);
+  --bright-green: hsl(172, 100%, 41%);
+
+  --text-color: #1a191b;
+  --link-color: rgba(12, 144, 201, 1);
+  --link-color-translucent: rgba(12, 144, 201, 0.5);
+  --link-color-visited: rgba(8, 98, 137, 1);
+  --link-color-visited-translucent: rgba(8, 98, 137, 0.5);
+
+  --big-john-font-stack: "Big John", sans-serif;
+  --raleway-font-stack: "Raleway", sans-serif;
+
+  --text-base-size: 1.25em;
+
+  --text-scale-ratio: 1.2;
+  --text-scale-ratio-pow2: var(--text-scale-ratio) * var(--text-scale-ratio);
+  --text-scale-ratio-pow3: var(--text-scale-ratio-pow2) * var(--text-scale-ratio);
+  --text-scale-ratio-pow4: var(--text-scale-ratio-pow3) * var(--text-scale-ratio);
+  --text-scale-ratio-pow5: var(--text-scale-ratio-pow4) * var(--text-scale-ratio);
+
+  --text-xs: calc(1em / (var(--text-scale-ratio-pow2)));
+  --text-sm: calc(1em / var(--text-scale-ratio));
+  --text-md: calc(1em * var(--text-scale-ratio));
+  --text-lg: calc(1em * var(--text-scale-ratio-pow2));
+  --text-xl: calc(1em * var(--text-scale-ratio-pow3));
+  --text-xxl: calc(1em * var(--text-scale-ratio-pow4));
+  --text-xxxl: calc(1em * var(--text-scale-ratio-pow5));
+
+  --space-xxxs: 0.25em;
+  --space-xxs: 0.375em;
+  --space-xs: 0.5em;
+  --space-sm: 0.75em;
+  --space-md: 1.25em;
+  --space-lg: 2em;
+  --space-xl: 3.25em;
+  --space-xxl: 5.25em;
+  --space-xxxl: 8.5em;
+
+  --heading-line-height: 1.2;
+  --body-line-height: 1.4;
+}
