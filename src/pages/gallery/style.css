@@ -1,0 +1,7 @@
+@import "react-image-gallery/styles/css/image-gallery.css";
+
+.image-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
