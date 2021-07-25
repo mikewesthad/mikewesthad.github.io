@@ -1,0 +1,33 @@
+.footerContainer {
+  text-align: center;
+  font-size: var(--text-xs);
+  color: #b0b0b0;
+}
+
+.footerContainer::before {
+  content: "";
+  display: block;
+  margin: var(--space-xs) auto;
+  width: 3rem;
+  border-top: 2px solid #d8d8d8;
+}
+
+.socialLinks {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.socialLinks a,
+.socialLinks a:visited {
+  color: #b0b0b0;
+}
+
+.socialLinks a:hover {
+  color: hsl(297, 100%, 34%);
+}
+
+.socialLinks a:active {
+  color: hsl(297, 100%, 20%);
+}
