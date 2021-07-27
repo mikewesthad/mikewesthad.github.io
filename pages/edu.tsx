@@ -7,9 +7,6 @@ function TeachingPage() {
       <PageTitle>Teaching</PageTitle>
       <h1>Teaching Portfolio</h1>
       <p>TODO!</p>
-      <p>
-        <Link href="/portfolio">See all portfolio.</Link>
-      </p>
     </main>
   );
 }

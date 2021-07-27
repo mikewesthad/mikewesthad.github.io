@@ -7,9 +7,9 @@ function DevelopmentPage() {
       <PageTitle>Development</PageTitle>
       <h1>Development</h1>
       <p>TODO!</p>
-      <p>
-        <Link href="/portfolio">See all portfolio.</Link>
-      </p>
+      <h2>Web Apps, Games and Tools</h2>
+      <p>I make...</p>
+      <Showcase />
     </main>
   );
 }
