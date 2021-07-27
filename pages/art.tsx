@@ -1,5 +1,5 @@
-import Link from "../../components/link";
-import PageTitle from "../../components/page-title";
+import Link from "../components/link";
+import PageTitle from "../components/page-title";
 
 function ArtPage() {
   return (
