@@ -28,13 +28,21 @@ function Nav() {
         mikewesthad
       </Link>
       <ul className={css.navList}>
-        <li>
+        <li className={css.dropdownTrigger}>
           <NavLink href="/" exact={true}>
-            About
+            Portfolio
           </NavLink>
-        </li>
-        <li>
-          <NavLink href="/portfolio">Portfolio</NavLink>
+          <ul className={css.dropdownList}>
+            <li>
+              <NavLink href="/dev">Dev</NavLink>
+            </li>
+            <li>
+              <NavLink href="/edu">Edu</NavLink>
+            </li>
+            <li>
+              <NavLink href="/art">Art</NavLink>
+            </li>
+          </ul>
         </li>
         <li>
           <NavLink href="/blog">Blog</NavLink>
