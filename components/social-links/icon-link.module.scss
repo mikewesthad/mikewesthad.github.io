@@ -1,5 +1,9 @@
 .iconLink {
   transition: all 250ms;
+
+  & svg {
+    display: block;
+  }
 }
 
 .iconLink,
