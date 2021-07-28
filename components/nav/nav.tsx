@@ -51,7 +51,7 @@ function Nav() {
           </li>
         </ul>
       </Container>
-      <hr />
+      <div className={css.divider} />
     </>
   );
 }
