@@ -4,12 +4,10 @@ import PageTitle from "../components/page-title";
 
 function ArtPage() {
   return (
-    <Container>
+    <Container tagName="main">
       <PageTitle>Art</PageTitle>
-      <main>
-        <h1>Art Portfolio</h1>
-        <p>TODO!</p>
-      </main>
+      <h1>Art Portfolio</h1>
+      <p>TODO!</p>
     </Container>
   );
 }

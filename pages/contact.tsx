@@ -37,20 +37,18 @@ const ContactPage = () => {
   const [state, handleSubmit] = useForm("mqkwbzyb");
 
   return (
-    <Container>
+    <Container tagName="main">
       <PageTitle>Contact</PageTitle>
-      <main>
-        <h1>Get in Touch</h1>
-        <p>
-          Looking to run a workshop on creative coding? Have a creative vision you want to bring to
-          life? Or, maybe you just want to say hello? Drop me a line.
-        </p>
-        {state.succeeded ? (
-          <p>Message sent! Thanks for reaching out.</p>
-        ) : (
-          <Form state={state} handleSubmit={handleSubmit} />
-        )}
-      </main>
+      <h1>Get in Touch</h1>
+      <p>
+        Looking to run a workshop on creative coding? Have a creative vision you want to bring to
+        life? Or, maybe you just want to say hello? Drop me a line.
+      </p>
+      {state.succeeded ? (
+        <p>Message sent! Thanks for reaching out.</p>
+      ) : (
+        <Form state={state} handleSubmit={handleSubmit} />
+      )}
     </Container>
   );
 };
