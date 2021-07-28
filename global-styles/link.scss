@@ -24,13 +24,18 @@ a:focus {
   cursor: pointer;
 }
 
-a.unstyled-link {
-  color: unset;
-  text-decoration: unset;
-  transition: unset;
-  outline: unset;
-  outline-offset: unset;
-  outline-color: unset;
-  outline-style: unset;
-  outline-offset: unset;
+.unstyled-link {
+  &,
+  &:hover,
+  &:focus,
+  &:visited {
+    color: unset;
+    text-decoration: unset;
+    transition: unset;
+    outline: unset;
+    outline-offset: unset;
+    outline-color: unset;
+    outline-style: unset;
+    outline-offset: unset;
+  }
 }
