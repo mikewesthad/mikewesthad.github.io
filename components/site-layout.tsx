@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from "./nav";
-import Footer from "./footer";
+import Nav from "./nav/nav";
+import Footer from "./footer/footer";
 import css from "./site-layout.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
 
