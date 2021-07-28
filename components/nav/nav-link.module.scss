@@ -1,0 +1,20 @@
+.navLink::after {
+  content: "";
+  display: block;
+  margin: 0.5rem auto 0 auto;
+  width: 0;
+  border-bottom: 2px solid transparent;
+  transition: all 200ms;
+}
+
+.navLink:hover::after {
+  width: 30%;
+  border-bottom: 2px solid var(--deep-purple);
+}
+
+.navLink.navLinkActive:hover::after,
+.navLink.navLinkActive::after {
+  transition: all 200ms;
+  width: 100%;
+  border-bottom: 2px solid var(--deep-purple);
+}
