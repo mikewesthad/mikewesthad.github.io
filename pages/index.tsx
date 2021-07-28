@@ -10,7 +10,7 @@ const IndexPage = () => {
       <PageTitle>Home</PageTitle>
       <h1>Hi 👋, I’m Mike Hadley</h1>
       <Image src={profileImage} alt="Mike Hadley"></Image>
-      <h2>About</h2>
+      <h2>Mission Statement</h2>
       <p>
         I’m a developer, educator and artist who translates creative ideas into code and teaches
         others how to do the same. My mission is to make the world of technology more accessible –
