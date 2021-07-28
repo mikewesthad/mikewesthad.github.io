@@ -4,8 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 4rem;
-  margin-bottom: 1rem;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
   position: relative;
 }
 
@@ -41,9 +41,10 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  background-color: white;
 
   li {
-    margin: 0.5em 0;
+    margin: var(--space-sm) 0;
     text-align: center;
   }
 }
