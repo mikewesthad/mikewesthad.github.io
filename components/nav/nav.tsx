@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import Link from "../link/link";
+import Link from "../link";
 import css from "./nav.module.scss";
 import Container from "../container/container";
 import { GitHubIconLink, LinkedInIconLink, YouTubeIconLink } from "../social-links/social-links";
