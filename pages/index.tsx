@@ -2,11 +2,13 @@ import Image from "next/image";
 import Link from "../components/link";
 import profileImage from "../images/mike-hadley-profile.jpg";
 import PageTitle from "../components/page-title";
+import Container from "../components/container/container";
 
 const IndexPage = () => {
   return (
-    <main>
+    <Container>
       <PageTitle>Home</PageTitle>
+      <main>
       <h1>Hi 👋, I’m Mike Hadley</h1>
       <Image src={profileImage} alt="Mike Hadley"></Image>
       <h2>About</h2>
@@ -33,7 +35,8 @@ const IndexPage = () => {
           <Link href="/art">Art</Link>
         </li>
       </ul>
-    </main>
+      </main>
+    </Container>
   );
 };
 

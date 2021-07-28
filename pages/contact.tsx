@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import PageTitle from "../components/page-title";
+import Container from "../components/container/container";
 
 type FormProps = {
   state: any;
@@ -36,19 +37,21 @@ const ContactPage = () => {
   const [state, handleSubmit] = useForm("mqkwbzyb");
 
   return (
-    <main>
+    <Container>
       <PageTitle>Contact</PageTitle>
-      <h1>Get in Touch</h1>
-      <p>
-        Looking to run a workshop on creative coding? Have a creative vision you want to bring to
-        life? Or, maybe you just want to say hello? Drop me a line.
-      </p>
-      {state.succeeded ? (
-        <p>Message sent! Thanks for reaching out.</p>
-      ) : (
-        <Form state={state} handleSubmit={handleSubmit} />
-      )}
-    </main>
+      <main>
+        <h1>Get in Touch</h1>
+        <p>
+          Looking to run a workshop on creative coding? Have a creative vision you want to bring to
+          life? Or, maybe you just want to say hello? Drop me a line.
+        </p>
+        {state.succeeded ? (
+          <p>Message sent! Thanks for reaching out.</p>
+        ) : (
+          <Form state={state} handleSubmit={handleSubmit} />
+        )}
+      </main>
+    </Container>
   );
 };
 
