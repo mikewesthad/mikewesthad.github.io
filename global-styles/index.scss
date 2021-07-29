@@ -1,18 +1,7 @@
 @import "./fonts/main";
 @import "./normalize";
+@import "./custom-normalize";
 @import "./variables";
 @import "./scrollbar";
 @import "./typography";
 @import "./link";
-
-html {
-  min-height: 100%;
-  overflow-y: scroll;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
