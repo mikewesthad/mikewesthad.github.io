@@ -1,6 +1,5 @@
-import * as React from "react";
-import Container from "../components/container/container";
-import PageTitle from "../components/page-title";
+import Container from "components/container/container";
+import PageTitle from "components/page-title";
 
 const FontTestPage = () => {
   return (

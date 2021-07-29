@@ -1,5 +1,5 @@
-import Container from "../../components/container/container";
-import PageTitle from "../../components/page-title";
+import Container from "components/container/container";
+import PageTitle from "components/page-title";
 
 function TeachingPage() {
   return (

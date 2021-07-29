@@ -1,10 +1,12 @@
-import React from "react";
-import { useRouter } from "next/router";
-import Link from "../link";
-import css from "./nav.module.scss";
-import Container from "../container/container";
-import { GitHubIconLink, LinkedInIconLink, YouTubeIconLink } from "../social-links/social-links";
+import Link from "components/link";
+import Container from "components/container/container";
+import {
+  GitHubIconLink,
+  LinkedInIconLink,
+  YouTubeIconLink,
+} from "components/social-links/social-links";
 import NavLink from "./nav-link";
+import css from "./nav.module.scss";
 
 function Nav() {
   return (

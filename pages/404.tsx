@@ -1,7 +1,6 @@
-import * as React from "react";
-import Container from "../components/container/container";
-import Link from "../components/link";
-import PageTitle from "../components/page-title";
+import Container from "components/container/container";
+import Link from "components/link";
+import PageTitle from "components/page-title";
 
 const NotFoundPage = () => {
   return (

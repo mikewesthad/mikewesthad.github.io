@@ -1,12 +1,11 @@
-import * as React from "react";
 import Image from "next/image";
-import post1Thumbnail from "../images/blog/phaser-tilemaps-1.gif";
-import post2Thumbnail from "../images/blog/phaser-tilemaps-2.gif";
-import post3Thumbnail from "../images/blog/phaser-tilemaps-3.gif";
-import post4Thumbnail from "../images/blog/phaser-tilemaps-4.gif";
-import post5Thumbnail from "../images/blog/phaser-tilemaps-5.gif";
-import PageTitle from "../components/page-title";
-import Container from "../components/container/container";
+import post1Thumbnail from "images/blog/phaser-tilemaps-1.gif";
+import post2Thumbnail from "images/blog/phaser-tilemaps-2.gif";
+import post3Thumbnail from "images/blog/phaser-tilemaps-3.gif";
+import post4Thumbnail from "images/blog/phaser-tilemaps-4.gif";
+import post5Thumbnail from "images/blog/phaser-tilemaps-5.gif";
+import PageTitle from "components/page-title";
+import Container from "components/container/container";
 
 type PostProps = {
   imageSrc: any;

@@ -1,4 +1,3 @@
-import React from "react";
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 
 interface LinkProps extends NextLinkProps {

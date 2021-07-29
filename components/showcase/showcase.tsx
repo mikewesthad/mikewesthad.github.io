@@ -1,7 +1,6 @@
-import React from "react";
 import Image from "next/image";
+import Link from "components/link";
 import css from "./showcase.module.scss";
-import Link from "../link";
 
 interface ShowcaseItemProps {
   title: string;

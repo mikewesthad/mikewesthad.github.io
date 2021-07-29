@@ -1,7 +1,6 @@
-import * as React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import PageTitle from "../components/page-title";
-import Container from "../components/container/container";
+import PageTitle from "components/page-title";
+import Container from "components/container/container";
 
 type FormProps = {
   state: any;

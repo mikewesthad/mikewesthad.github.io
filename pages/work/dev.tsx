@@ -1,11 +1,11 @@
-import PageTitle from "../../components/page-title";
-import Showcase, { ShowcaseItem } from "../../components/showcase/showcase";
+import PageTitle from "components/page-title";
+import Showcase, { ShowcaseItem } from "components/showcase/showcase";
 import participateImage from "./participate/images/participate-action-plan-1.png";
-import gamefrootImage from "../../images/gamefroot/gamefroot-1.png";
-import phaserImage from "../../images/phaser/phaser-1.png";
-import eacImage from "../../images/eac/budget-guessing.png";
-import togetherooImage from "../../images/togetheroo/togetheroo-1.png";
-import Container from "../../components/container/container";
+import gamefrootImage from "images/gamefroot/gamefroot-1.png";
+import phaserImage from "images/phaser/phaser-1.png";
+import eacImage from "images/eac/budget-guessing.png";
+import togetherooImage from "images/togetheroo/togetheroo-1.png";
+import Container from "components/container/container";
 
 function DevelopmentPage() {
   return (

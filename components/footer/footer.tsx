@@ -1,7 +1,10 @@
 import React from "react";
-import { IoLogoGithub, IoLogoLinkedin, IoLogoYoutube } from "react-icons/io5";
 import css from "./footer.module.scss";
-import { GitHubIconLink, LinkedInIconLink, YouTubeIconLink } from "../social-links/social-links";
+import {
+  GitHubIconLink,
+  LinkedInIconLink,
+  YouTubeIconLink,
+} from "components/social-links/social-links";
 
 function Footer() {
   const year = new Date().getFullYear();
