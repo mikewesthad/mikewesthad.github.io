@@ -15,16 +15,16 @@ function Nav() {
             Home
           </NavLink>
           <li className={css.dropdownTrigger}>
-            <NavLink href="/work">Portfolio▼</NavLink>
+            <NavLink href="/portfolio">Portfolio▼</NavLink>
             <ul className={css.dropdownList}>
               <li>
-                <NavLink href="/work/dev">Dev</NavLink>
+                <NavLink href="/portfolio/dev">Dev</NavLink>
               </li>
               <li>
-                <NavLink href="/work/edu">Edu</NavLink>
+                <NavLink href="/portfolio/edu">Edu</NavLink>
               </li>
               <li>
-                <NavLink href="/work/art">Art</NavLink>
+                <NavLink href="/portfolio/art">Art</NavLink>
               </li>
             </ul>
           </li>
