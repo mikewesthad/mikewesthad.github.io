@@ -25,13 +25,13 @@ const IndexPage = () => {
       <p>Want to see examples of my work? It's broken down into the following categories:</p>
       <ul>
         <li>
-          <Link href="/dev">Development</Link>
+          <Link href="/portfolio/dev">Development</Link>
         </li>
         <li>
-          <Link href="/edu">Teaching</Link>
+          <Link href="/portfolio/edu">Teaching</Link>
         </li>
         <li>
-          <Link href="/art">Art</Link>
+          <Link href="/portfolio/art">Art</Link>
         </li>
       </ul>
     </Container>
