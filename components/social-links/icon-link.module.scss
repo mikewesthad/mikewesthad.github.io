@@ -15,6 +15,7 @@
   color: hsl(297, 100%, 34%);
 }
 
-.iconLink:active {
+.iconLink:active,
+.iconLink:focus {
   color: hsl(297, 100%, 20%);
 }
