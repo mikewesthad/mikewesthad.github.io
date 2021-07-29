@@ -15,7 +15,7 @@ function Nav() {
             Home
           </NavLink>
           <li className={css.dropdownTrigger}>
-            <NavLink href="/work">Portfolio</NavLink>
+            <NavLink href="/work">Portfolio▼</NavLink>
             <ul className={css.dropdownList}>
               <li>
                 <NavLink href="/work/dev">Dev</NavLink>
