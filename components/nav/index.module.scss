@@ -16,6 +16,12 @@
 
 .navLogo {
   font-size: var(--text-xl);
+
+  &:focus {
+    outline: 0.1em dashed transparent;
+    outline-offset: 0.15em;
+    outline-color: var(--text-color);
+  }
 }
 
 .navList {
@@ -30,7 +36,8 @@
 .dropdownTrigger {
   position: relative;
 
-  &:hover .dropdownList {
+  &:hover .dropdownList,
+  &:focus-within .dropdownList {
     opacity: 1;
   }
 }
