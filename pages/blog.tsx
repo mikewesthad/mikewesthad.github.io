@@ -5,7 +5,7 @@ import post3Thumbnail from "images/blog/phaser-tilemaps-3.gif";
 import post4Thumbnail from "images/blog/phaser-tilemaps-4.gif";
 import post5Thumbnail from "images/blog/phaser-tilemaps-5.gif";
 import PageTitle from "components/page-title";
-import Container from "components/container/container";
+import Container from "components/container";
 
 type PostProps = {
   imageSrc: any;

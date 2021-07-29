@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
-import Nav from "components/nav/nav";
-import Footer from "components/footer/footer";
-import css from "./site-layout.module.scss";
+import Nav from "components/nav";
+import Footer from "components/footer";
+import css from "./index.module.scss";
 
 type SiteLayoutProps = {
   pageKey: string;

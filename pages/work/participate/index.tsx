@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Container from "components/container/container";
+import Container from "components/container";
 import action1 from "./images/participate-action-plan-1.png";
 import action2 from "./images/participate-action-plan-2.png";
 import sdg1 from "./images/participate-sdg-1.png";

@@ -1,12 +1,8 @@
 import Link from "components/link";
-import Container from "components/container/container";
-import {
-  GitHubIconLink,
-  LinkedInIconLink,
-  YouTubeIconLink,
-} from "components/social-links/social-links";
+import Container from "components/container";
+import { GitHubIconLink, LinkedInIconLink, YouTubeIconLink } from "components/social-links";
 import NavLink from "./nav-link";
-import css from "./nav.module.scss";
+import css from "./index.module.scss";
 
 function Nav() {
   return (

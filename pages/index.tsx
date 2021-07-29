@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "components/link";
 import profileImage from "images/mike-hadley-profile.jpg";
 import PageTitle from "components/page-title";
-import Container from "components/container/container";
+import Container from "components/container";
 
 const IndexPage = () => {
   return (

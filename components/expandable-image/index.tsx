@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { IoMdClose } from "react-icons/io";
-import css from "./expandable-image.module.scss";
+import css from "./index.module.scss";
 
 interface ExpandedImageProps {
   children: React.ReactNode;

@@ -1,4 +1,4 @@
-import Container from "components/container/container";
+import Container from "components/container";
 import PageTitle from "components/page-title";
 
 const FontTestPage = () => {

@@ -1,6 +1,6 @@
 import Link from "components/link";
 import PageTitle from "components/page-title";
-import Container from "components/container/container";
+import Container from "components/container";
 
 const PortfolioPage = () => {
   return (

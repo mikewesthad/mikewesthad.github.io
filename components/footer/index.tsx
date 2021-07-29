@@ -1,10 +1,5 @@
-import React from "react";
-import css from "./footer.module.scss";
-import {
-  GitHubIconLink,
-  LinkedInIconLink,
-  YouTubeIconLink,
-} from "components/social-links/social-links";
+import css from "./index.module.scss";
+import { GitHubIconLink, LinkedInIconLink, YouTubeIconLink } from "components/social-links";
 
 function Footer() {
   const year = new Date().getFullYear();

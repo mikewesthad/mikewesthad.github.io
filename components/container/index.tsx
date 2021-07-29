@@ -1,5 +1,5 @@
 import cn from "classnames";
-import css from "./container.module.scss";
+import css from "./index.module.scss";
 
 interface ContainerProps {
   children: React.ReactNode;

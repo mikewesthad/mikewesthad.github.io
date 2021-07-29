@@ -1,4 +1,4 @@
-import Container from "components/container/container";
+import Container from "components/container";
 import Link from "components/link";
 import PageTitle from "components/page-title";
 
