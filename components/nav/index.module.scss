@@ -39,6 +39,7 @@
   &:hover .dropdownList,
   &:focus-within .dropdownList {
     opacity: 1;
+    border: 3px solid #f7f6eb;
   }
 }
 
@@ -54,6 +55,10 @@
   li {
     margin: var(--space-sm) 0;
     text-align: center;
+
+    a {
+      display: inline-block;
+    }
   }
 }
 
