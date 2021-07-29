@@ -1,0 +1,12 @@
+.post {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: start;
+  gap: var(--space-md);
+}
+
+.details {
+  *:first-child {
+    margin-top: 0;
+  }
+}
