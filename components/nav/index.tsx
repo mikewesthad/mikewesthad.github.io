@@ -1,5 +1,4 @@
 import Link from "components/link";
-import Container from "components/container";
 import { GitHubIconLink, LinkedInIconLink, YouTubeIconLink } from "components/social-links";
 import NavLink from "./nav-link";
 import css from "./index.module.scss";
@@ -7,7 +6,7 @@ import css from "./index.module.scss";
 function Nav() {
   return (
     <>
-      <Container tagName="nav" className={css.nav}>
+      <nav className={css.nav}>
         <Link href="/" className={`unstyled-link ${css.navLogo}`}>
           mikewesthad
         </Link>
@@ -49,7 +48,7 @@ function Nav() {
             </ul>
           </li>
         </ul>
-      </Container>
+      </nav>
       <div className={css.divider} />
     </>
   );
