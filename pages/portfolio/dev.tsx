@@ -1,11 +1,11 @@
 import PageTitle from "components/page-title";
 import Showcase, { ShowcaseItem } from "components/showcase";
-import participateImage from "./participate/images/participate-action-plan-1.png";
 import gamefrootImage from "images/gamefroot/gamefroot-1.png";
 import phaserImage from "images/phaser/phaser-1.png";
 import eacImage from "images/eac/budget-guessing.png";
 import togetherooImage from "images/togetheroo/togetheroo-1.png";
 import Container from "components/container";
+import ParticipateShowcaseItem from "./participate/participate-showcase-item";
 
 function DevelopmentPage() {
   return (
@@ -27,11 +27,7 @@ function DevelopmentPage() {
       </p>
       <h2>Web Apps, Games and Tools</h2>
       <Showcase>
-        <ShowcaseItem
-          image={participateImage}
-          title="Games for Educators"
-          subtitle="Client: Participate"
-        />
+        <ParticipateShowcaseItem />
         <ShowcaseItem
           image={gamefrootImage}
           title="Educational Game Engine"
