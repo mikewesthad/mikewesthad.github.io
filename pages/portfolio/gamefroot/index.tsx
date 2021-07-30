@@ -1,0 +1,36 @@
+import Image from "next/image";
+import Container from "components/container";
+import gamefrootImage1 from "./images/gamefroot-1.png";
+import gamefrootImage2 from "./images/gamefroot-2.png";
+import ImageGallery from "components/image-gallery";
+
+function Gamefroot() {
+  return (
+    <main>
+      <Container tagName="section">
+        <h1>Gamefroot</h1>
+      </Container>
+      <Container tagName="section">
+        <h2>Overview</h2>
+        <p>
+          I rebuilt and modernized Gamefroot's game editor from the ground up (TypeScript, Phaser
+          game engine, React). <a href="https://make.gamefroot.com/">Gamefroot</a> is a cloud-based
+          platform for making 2D games. It aims to make learning how to design and code a game as
+          accessible and exciting as possible.
+        </p>
+        <p>
+          Their existing web game editor was built on their own custom game engine, which had become
+          a drain on their development team to maintain. They brought me in based on my game engine
+          work to rebuild their editor in the open source Phaser game engine and add new features to
+          their platform.
+        </p>
+      </Container>
+      <ImageGallery>
+        <Image src={gamefrootImage1} />
+        <Image src={gamefrootImage2} />
+      </ImageGallery>
+    </main>
+  );
+}
+
+export default Gamefroot;
