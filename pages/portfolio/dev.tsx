@@ -1,12 +1,12 @@
 import PageTitle from "components/page-title";
 import Showcase, { ShowcaseItem } from "components/showcase";
-import gamefrootImage from "images/gamefroot/gamefroot-1.png";
 import phaserImage from "images/phaser/phaser-1.png";
 import eacImage from "images/eac/budget-guessing.png";
 import togetherooImage from "images/togetheroo/togetheroo-1.png";
 import Container from "components/container";
 import ParticipateShowcaseItem from "./participate/participate-showcase-item";
 import OpenSourceShowcase from "components/open-source-showcase";
+import GamefrootShowcaseItem from "./gamefroot/gamefroot-showcase-item";
 
 function DevelopmentPage() {
   return (
@@ -29,12 +29,7 @@ function DevelopmentPage() {
       <h2>Web Apps, Games and Tools</h2>
       <Showcase>
         <ParticipateShowcaseItem />
-        <ShowcaseItem
-          href="#"
-          image={gamefrootImage}
-          title="Educational Game Engine"
-          subtitle="Client: Gamefroot"
-        />
+        <GamefrootShowcaseItem />
         <ShowcaseItem
           href="#"
           image={phaserImage}
