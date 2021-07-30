@@ -20,7 +20,6 @@ function OpenSourceShowcase({}: OpenSourceShowcaseProps) {
         title="Phaser Matter Collision Plugin"
         subtitle="Physics Plugin"
       />
-
       <ShowcaseItem
         href="https://github.com/sporadic-labs/tile-extruder"
         image={extruderImage}
