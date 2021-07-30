@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Container from "components/container";
+import ImageGallery from "components/image-gallery";
+import ProjectPage from "components/project-page";
 import gamefrootImage1 from "./images/gamefroot-1.png";
 import gamefrootImage2 from "./images/gamefroot-2.png";
-import ImageGallery from "components/image-gallery";
 
 function Gamefroot() {
   return (
-    <main>
+    <ProjectPage backTo="dev">
       <Container tagName="section">
         <h1>Gamefroot</h1>
       </Container>
@@ -29,7 +30,7 @@ function Gamefroot() {
         <Image src={gamefrootImage1} />
         <Image src={gamefrootImage2} />
       </ImageGallery>
-    </main>
+    </ProjectPage>
   );
 }
 

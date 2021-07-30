@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Container from "components/container";
-import action1 from "./images/participate-action-plan-1.png";
-import action2 from "./images/participate-action-plan-2.png";
-import sdg1 from "./images/participate-sdg-1.png";
-import sdg2 from "./images/participate-sdg-2.png";
 import ImageGallery from "components/image-gallery";
+import ProjectPage from "components/project-page";
+import actionImage1 from "./images/participate-action-plan-1.png";
+import actionImage2 from "./images/participate-action-plan-2.png";
+import sdgImage1 from "./images/participate-sdg-1.png";
+import sdgImage2 from "./images/participate-sdg-2.png";
 
 function Participate() {
   return (
-    <main>
+    <ProjectPage backTo="dev">
       <Container tagName="section">
         <h1>Participate</h1>
       </Container>
@@ -39,8 +40,8 @@ function Participate() {
         </p>
       </Container>
       <ImageGallery>
-        <Image src={sdg1} />
-        <Image src={sdg2} />
+        <Image src={sdgImage1} />
+        <Image src={sdgImage2} />
       </ImageGallery>
       <Container tagName="section">
         <h2>Find Your Action Plan Quiz</h2>
@@ -53,10 +54,10 @@ function Participate() {
         </p>
       </Container>
       <ImageGallery>
-        <Image src={action1} />
-        <Image src={action2} />
+        <Image src={actionImage1} />
+        <Image src={actionImage2} />
       </ImageGallery>
-    </main>
+    </ProjectPage>
   );
 }
 
