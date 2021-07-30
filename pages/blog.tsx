@@ -6,10 +6,10 @@ interface BlogPageProps {}
 
 function BlogPage({}: BlogPageProps) {
   return (
-    <Container tagName="main">
+    <main>
       <PageTitle>Blog</PageTitle>
       <Blog />
-    </Container>
+    </main>
   );
 }
 

@@ -1,13 +1,19 @@
-import Container from "components/container";
+import Section from "components/container/section";
 import PageTitle from "components/page-title";
 
 function TeachingPage() {
   return (
-    <Container tagName="main">
+    <main>
       <PageTitle>Teaching</PageTitle>
-      <h1>Teaching Portfolio</h1>
-      <p>TODO!</p>
-    </Container>
+      <Section>
+        <h1>Teaching Porfolio</h1>
+        <p>Coming soon!</p>
+        <p>
+          This website is in the process of being updated. This page will feature selected
+          classes/workshops/etc. soon. Check back in a couple days 📅.
+        </p>
+      </Section>
+    </main>
   );
 }
 
