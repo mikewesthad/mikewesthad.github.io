@@ -6,6 +6,7 @@ interface ParticipateShowcaseItemProps {}
 function ParticipateShowcaseItem({}: ParticipateShowcaseItemProps) {
   return (
     <ShowcaseItem
+      href="/portfolio/participate"
       image={participateImage}
       title="Games for Educators"
       subtitle="Client: Participate"

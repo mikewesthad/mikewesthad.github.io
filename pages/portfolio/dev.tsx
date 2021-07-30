@@ -6,6 +6,7 @@ import eacImage from "images/eac/budget-guessing.png";
 import togetherooImage from "images/togetheroo/togetheroo-1.png";
 import Container from "components/container";
 import ParticipateShowcaseItem from "./participate/participate-showcase-item";
+import OpenSourceShowcase from "components/open-source-showcase";
 
 function DevelopmentPage() {
   return (
@@ -29,23 +30,32 @@ function DevelopmentPage() {
       <Showcase>
         <ParticipateShowcaseItem />
         <ShowcaseItem
+          href="#"
           image={gamefrootImage}
           title="Educational Game Engine"
           subtitle="Client: Gamefroot"
         />
         <ShowcaseItem
+          href="#"
           image={phaserImage}
           title="Game Engine Development"
           subtitle="Client: Phaser"
         />
-        <ShowcaseItem image={eacImage} title="Financial Literacy Games" subtitle="Client: CCC" />
         <ShowcaseItem
+          href="#"
+          image={eacImage}
+          title="Financial Literacy Games"
+          subtitle="Client: CCC"
+        />
+        <ShowcaseItem
+          href="#"
           image={togetherooImage}
           title="Multiplayer Video Chat App"
           subtitle="Client: Togetheroo"
         />
       </Showcase>
       <h2>Open Source Tools</h2>
+      <OpenSourceShowcase />
       <p>I make...</p>
       <h2>Art</h2>
       <p>I make...</p>

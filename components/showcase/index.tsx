@@ -6,12 +6,13 @@ interface ShowcaseItemProps {
   title: string;
   subtitle: string;
   image: StaticImageData;
+  href: string;
 }
 
-function ShowcaseItem({ image, title, subtitle }: ShowcaseItemProps) {
+function ShowcaseItem({ image, title, subtitle, href }: ShowcaseItemProps) {
   return (
     <li>
-      <Link className="unstyled-link" href="#">
+      <Link className="unstyled-link" href={href}>
         <figure className={css.showcaseItem}>
           <Image src={image} width={250} height={(250 * 9) / 16} objectFit="cover" />
           <figcaption>
