@@ -1,11 +1,12 @@
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: var(--space-sm);
+  padding-right: var(--space-sm);
   width: 100%;
   max-width: 850px;
 }
 
 .fullWidth {
-  padding: var(--space-lg);
   max-width: 100%;
 }
