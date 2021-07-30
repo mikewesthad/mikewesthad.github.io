@@ -11,28 +11,40 @@ function Nav() {
           mikewesthad
         </Link>
         <ul className={css.navList}>
-          <NavLink href="/" exact={true}>
+          <NavLink href="/" exact={true} tiltLeft={true}>
             Home
           </NavLink>
           <li className={css.dropdownTrigger}>
-            <NavLink href="/portfolio">Portfolio▼</NavLink>
+            <NavLink href="/portfolio" tiltLeft={false}>
+              Portfolio▼
+            </NavLink>
             <ul className={css.dropdownList}>
               <li>
-                <NavLink href="/portfolio/dev">Dev</NavLink>
+                <NavLink href="/portfolio/dev" tiltLeft={true}>
+                  Dev
+                </NavLink>
               </li>
               <li>
-                <NavLink href="/portfolio/edu">Edu</NavLink>
+                <NavLink href="/portfolio/edu" tiltLeft={false}>
+                  Edu
+                </NavLink>
               </li>
               <li>
-                <NavLink href="/portfolio/art">Art</NavLink>
+                <NavLink href="/portfolio/art" tiltLeft={true}>
+                  Art
+                </NavLink>
               </li>
             </ul>
           </li>
           <li>
-            <NavLink href="/blog">Blog</NavLink>
+            <NavLink href="/blog" tiltLeft={true}>
+              Blog
+            </NavLink>
           </li>
           <li>
-            <NavLink href="/contact">Contact</NavLink>
+            <NavLink href="/contact" tiltLeft={false}>
+              Contact
+            </NavLink>
           </li>
           <li>
             <ul className={css.socialLinks}>
