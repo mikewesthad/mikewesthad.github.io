@@ -34,11 +34,10 @@ function DevelopmentPage() {
         <FinancialLiteracyShowcaseItem />
         <TogetherooShowcaseItem />
       </Showcase>
-      <h2>Open Source Tools</h2>
+      <h2>Selected Open Source Work</h2>
       <OpenSourceShowcase />
-      <p>I make...</p>
-      <h2>Art</h2>
-      <p>I make...</p>
+      <h2>Technical Writing</h2>
+      <h2>Code-Based Art</h2>
     </Container>
   );
 }
