@@ -10,21 +10,19 @@ interface ShowcaseItemProps {
 }
 
 function ShowcaseItem({ image, title, subtitle, href }: ShowcaseItemProps) {
-  let isExternalLink = href.startsWith("http://") || href.startsWith("https://");
+  const isExternalLink = href.startsWith("http://") || href.startsWith("https://");
   return (
-    <li>
+    <li className={css.item}>
       <Link className="unstyled-link" href={href}>
-        <figure className={css.showcaseItem}>
-          <Image src={image} width={200} height={(200 * 9) / 16} objectFit="cover" />
-          <figcaption>
-            <div className={css.showcaseItemTitle}>{title}</div>
-            <div className={css.showcaseItemSubtitle}>{subtitle}</div>
-            {isExternalLink && (
-              <div className={css.showcaseItemWarning}>(Opens external site.)</div>
-            )}
+        <figure className={css.figure}>
+          <Image src={image} layout="fill" objectFit="cover" />
+          <figcaption className={css.itemCaption}>
+            <div className={css.itemTitle}>{title}</div>
+            <div className={css.itemSubtitle}>{subtitle}</div>
           </figcaption>
         </figure>
       </Link>
+      {isExternalLink && <div className={css.itemWarning}>(External link)</div>}
     </li>
   );
 }
