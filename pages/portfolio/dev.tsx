@@ -8,6 +8,7 @@ import PhaserShowcaseItem from "./phaser/phaser-showcase-item";
 import TogetherooShowcaseItem from "./togetheroo/showcase-item";
 import FinancialLiteracyShowcaseItem from "./financial-literacy/showcase-item";
 import TechnicalWritingShowcase from "components/technical-writing-showcase";
+import ArtDevShowcase from "components/art-dev-showcase";
 
 function DevelopmentPage() {
   return (
@@ -40,6 +41,7 @@ function DevelopmentPage() {
       <h2>Technical Writing</h2>
       <TechnicalWritingShowcase />
       <h2>Code-Based Art</h2>
+      <ArtDevShowcase />
     </Container>
   );
 }
