@@ -8,6 +8,7 @@ import ParticipateShowcaseItem from "./participate/participate-showcase-item";
 import OpenSourceShowcase from "components/open-source-showcase";
 import GamefrootShowcaseItem from "./gamefroot/gamefroot-showcase-item";
 import PhaserShowcaseItem from "./phaser/phaser-showcase-item";
+import TogetherooShowcaseItem from "./togetheroo/showcase-item";
 
 function DevelopmentPage() {
   return (
@@ -38,12 +39,7 @@ function DevelopmentPage() {
           title="Financial Literacy Games"
           subtitle="Client: CCC"
         />
-        <ShowcaseItem
-          href="#"
-          image={togetherooImage}
-          title="Multiplayer Video Chat App"
-          subtitle="Client: Togetheroo"
-        />
+        <TogetherooShowcaseItem />
       </Showcase>
       <h2>Open Source Tools</h2>
       <OpenSourceShowcase />
