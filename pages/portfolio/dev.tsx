@@ -9,6 +9,7 @@ import OpenSourceShowcase from "components/open-source-showcase";
 import GamefrootShowcaseItem from "./gamefroot/gamefroot-showcase-item";
 import PhaserShowcaseItem from "./phaser/phaser-showcase-item";
 import TogetherooShowcaseItem from "./togetheroo/showcase-item";
+import FinancialLiteracyShowcaseItem from "./financial-literacy/showcase-item";
 
 function DevelopmentPage() {
   return (
@@ -33,12 +34,7 @@ function DevelopmentPage() {
         <ParticipateShowcaseItem />
         <GamefrootShowcaseItem />
         <PhaserShowcaseItem />
-        <ShowcaseItem
-          href="#"
-          image={eacImage}
-          title="Financial Literacy Games"
-          subtitle="Client: CCC"
-        />
+        <FinancialLiteracyShowcaseItem />
         <TogetherooShowcaseItem />
       </Showcase>
       <h2>Open Source Tools</h2>
