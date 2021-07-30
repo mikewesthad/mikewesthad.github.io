@@ -1,0 +1,54 @@
+import Image from "next/image";
+import Container from "components/container";
+import ProjectPage from "components/project-page";
+import ImageGallery from "components/image-gallery";
+import image1 from "./images/tangents.png";
+import image2 from "./images/intro-screenshot.png";
+import image3 from "./images/meshes-screenshot.png";
+import image4 from "./images/rotating.png";
+import image5 from "./images/editing-vectors.png";
+
+function OFBook() {
+  return (
+    <ProjectPage backTo="dev">
+      <Container tagName="section">
+        <h1>ofBook</h1>
+      </Container>
+      <Container tagName="section">
+        <h2>Overview</h2>
+        <p>
+          ofBook is an open source book about creative coding in C++ using the{" "}
+          <a href="http://openframeworks.cc/">openFrameworks</a> library. It covers everything from
+          getting started to iOS applications to game design. ofBook is available online as a web
+          book <a href="http://openframeworks.cc/ofBook/chapters/foreword.html">here</a>.
+        </p>
+        <p>
+          I wrote two chapters on graphics for the book.{" "}
+          <a href="http://openframeworks.cc/ofBook/chapters/intro_to_graphics.html">
+            Introduction to Graphics
+          </a>{" "}
+          is a chapter that guides the reader through the world of 2D graphics by creating complex
+          forms from simple shapes.{" "}
+          <a href="http://openframeworks.cc/ofBook/chapters/generativemesh.html">
+            Generative Meshes
+          </a>{" "}
+          is a chapter about generating 3D graphics by applying simple rules to some data.
+        </p>
+        <p>
+          I also helped develop the pipelines that convert the source material of the book into a
+          formatted web book and a PDF book. See more in the the{" "}
+          <a href="https://github.com/openframeworks/ofBook">GitHub repository</a>.
+        </p>
+      </Container>
+      <ImageGallery>
+        <Image src={image1} />
+        <Image src={image2} />
+        <Image src={image3} />
+        <Image src={image4} />
+        <Image src={image5} />
+      </ImageGallery>
+    </ProjectPage>
+  );
+}
+
+export default OFBook;

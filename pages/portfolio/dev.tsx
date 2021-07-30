@@ -7,6 +7,7 @@ import GamefrootShowcaseItem from "./gamefroot/gamefroot-showcase-item";
 import PhaserShowcaseItem from "./phaser/phaser-showcase-item";
 import TogetherooShowcaseItem from "./togetheroo/showcase-item";
 import FinancialLiteracyShowcaseItem from "./financial-literacy/showcase-item";
+import TechnicalWritingShowcase from "components/technical-writing-showcase";
 
 function DevelopmentPage() {
   return (
@@ -37,6 +38,7 @@ function DevelopmentPage() {
       <h2>Selected Open Source Work</h2>
       <OpenSourceShowcase />
       <h2>Technical Writing</h2>
+      <TechnicalWritingShowcase />
       <h2>Code-Based Art</h2>
     </Container>
   );
