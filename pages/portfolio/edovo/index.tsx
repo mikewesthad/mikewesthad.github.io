@@ -33,7 +33,7 @@ function Edovo() {
         </p>
       </Section>
       <ImageGallery>
-        <Image src={image1} />
+        <Image src={image1} objectFit="contain" />
         <Image src={image2} />
         <Image src={image3} />
       </ImageGallery>
