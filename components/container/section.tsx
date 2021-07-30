@@ -6,11 +6,12 @@ interface SectionProps {
   className?: string;
   children: React.ReactNode;
   fullWidth?: boolean;
+  tagName?: keyof JSX.IntrinsicElements;
 }
 
-function Section({ children, className, fullWidth }: SectionProps) {
+function Section({ children, className, tagName = "section", fullWidth = false }: SectionProps) {
   return (
-    <Container tagName="section" fullWidth={fullWidth} className={cn(className, css.section)}>
+    <Container tagName={tagName} fullWidth={fullWidth} className={cn(className, css.section)}>
       {children}
     </Container>
   );

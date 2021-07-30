@@ -1,19 +1,19 @@
 import Image from "next/image";
-import Container from "components/container";
 import ImageGallery from "components/image-gallery";
 import ProjectPage from "components/project-page";
 import actionImage1 from "./images/participate-action-plan-1.png";
 import actionImage2 from "./images/participate-action-plan-2.png";
 import sdgImage1 from "./images/participate-sdg-1.png";
 import sdgImage2 from "./images/participate-sdg-2.png";
+import Section from "components/container/section";
 
 function Participate() {
   return (
     <ProjectPage backTo="dev">
-      <Container tagName="section">
+      <Section>
         <h1>Participate</h1>
-      </Container>
-      <Container tagName="section">
+      </Section>
+      <Section>
         <h2>Overview</h2>
         <p>
           I designed and developed a pair of serious games for educators (React, JS) that drew new
@@ -27,8 +27,8 @@ function Participate() {
           <a href="https://sdgs.un.org/goals">Sustainable Development Goals</a> (SDGs), a set of
           goals for achieving a better and more sustainable future for all.
         </p>
-      </Container>
-      <Container tagName="section">
+      </Section>
+      <Section>
         <h2>Unit Planning Card Game</h2>
         <p>
           The unit planning card game helps teachers plan new units around the SDGs through picking
@@ -38,12 +38,12 @@ function Participate() {
           then generates a downloadable unit plan based on those cards that teachers can use to
           jumpstart the planning process.
         </p>
-      </Container>
+      </Section>
       <ImageGallery>
         <Image src={sdgImage1} />
         <Image src={sdgImage2} />
       </ImageGallery>
-      <Container tagName="section">
+      <Section>
         <h2>Find Your Action Plan Quiz</h2>
         <p>
           In the "Find Your Action Plan" quiz, teachers (or students) answer a series of short
@@ -52,7 +52,7 @@ function Participate() {
           activity comes with a PDF explaining how to get started and how to connect it with
           standards.
         </p>
-      </Container>
+      </Section>
       <ImageGallery>
         <Image src={actionImage1} />
         <Image src={actionImage2} />

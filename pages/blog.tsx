@@ -1,5 +1,4 @@
 import Blog from "components/blog";
-import Container from "components/container";
 import PageTitle from "components/page-title";
 
 interface BlogPageProps {}

@@ -1,17 +1,17 @@
 import Image from "next/image";
-import Container from "components/container";
 import ImageGallery from "components/image-gallery";
 import ProjectPage from "components/project-page";
 import gamefrootImage1 from "./images/gamefroot-1.png";
 import gamefrootImage2 from "./images/gamefroot-2.png";
+import Section from "components/container/section";
 
 function Gamefroot() {
   return (
     <ProjectPage backTo="dev">
-      <Container tagName="section">
+      <Section>
         <h1>Gamefroot</h1>
-      </Container>
-      <Container tagName="section">
+      </Section>
+      <Section>
         <h2>Overview</h2>
         <p>
           I rebuilt and modernized Gamefroot's game editor from the ground up (TypeScript, Phaser
@@ -25,7 +25,7 @@ function Gamefroot() {
           work to rebuild their editor in the open source Phaser game engine and add new features to
           their platform.
         </p>
-      </Container>
+      </Section>
       <ImageGallery>
         <Image src={gamefrootImage1} />
         <Image src={gamefrootImage2} />

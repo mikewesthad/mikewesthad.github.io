@@ -1,4 +1,4 @@
-import Container from "components/container";
+import Section from "components/container/section";
 import css from "./index.module.scss";
 
 interface ImageGalleryProps {
@@ -7,9 +7,9 @@ interface ImageGalleryProps {
 
 function ImageGallery({ children }: ImageGalleryProps) {
   return (
-    <Container tagName="ul" className={css.grid} fullWidth>
+    <Section tagName="ul" className={css.grid} fullWidth>
       {children}
-    </Container>
+    </Section>
   );
 }
 
