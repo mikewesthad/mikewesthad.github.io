@@ -1,8 +1,5 @@
 import PageTitle from "components/page-title";
-import Showcase, { ShowcaseItem } from "components/showcase";
-import phaserImage from "images/phaser/phaser-1.png";
-import eacImage from "images/eac/budget-guessing.png";
-import togetherooImage from "images/togetheroo/togetheroo-1.png";
+import Showcase from "components/showcase";
 import Container from "components/container";
 import ParticipateShowcaseItem from "./participate/participate-showcase-item";
 import OpenSourceShowcase from "components/open-source-showcase";
