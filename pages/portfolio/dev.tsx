@@ -7,6 +7,7 @@ import Container from "components/container";
 import ParticipateShowcaseItem from "./participate/participate-showcase-item";
 import OpenSourceShowcase from "components/open-source-showcase";
 import GamefrootShowcaseItem from "./gamefroot/gamefroot-showcase-item";
+import PhaserShowcaseItem from "./phaser/phaser-showcase-item";
 
 function DevelopmentPage() {
   return (
@@ -30,12 +31,7 @@ function DevelopmentPage() {
       <Showcase>
         <ParticipateShowcaseItem />
         <GamefrootShowcaseItem />
-        <ShowcaseItem
-          href="#"
-          image={phaserImage}
-          title="Game Engine Development"
-          subtitle="Client: Phaser"
-        />
+        <PhaserShowcaseItem />
         <ShowcaseItem
           href="#"
           image={eacImage}
