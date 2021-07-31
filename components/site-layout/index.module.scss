@@ -2,6 +2,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  // Prevent the layout container from triggering an internal scrollbar
+  // during the transitions.
+  overflow-y: hidden;
 }
 
 .layoutContents {
