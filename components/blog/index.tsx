@@ -1,11 +1,11 @@
 import Section from "components/container/section";
 import Post from "./post";
 import css from "./index.module.scss";
-import post1Thumbnail from "./images/phaser-tilemaps-1.gif";
-import post2Thumbnail from "./images/phaser-tilemaps-2.gif";
-import post3Thumbnail from "./images/phaser-tilemaps-3.gif";
-import post4Thumbnail from "./images/phaser-tilemaps-4.gif";
-import post5Thumbnail from "./images/phaser-tilemaps-5.gif";
+import post1Thumbnail from "./images/phaser-tilemaps-1.png";
+import post2Thumbnail from "./images/phaser-tilemaps-2.png";
+import post3Thumbnail from "./images/phaser-tilemaps-3.png";
+import post4Thumbnail from "./images/phaser-tilemaps-4.png";
+import post5Thumbnail from "./images/phaser-tilemaps-5.png";
 
 interface BlogProps {}
 
