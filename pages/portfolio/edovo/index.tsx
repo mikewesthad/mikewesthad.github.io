@@ -32,11 +32,7 @@ function Edovo() {
           successfully, or give them directed hints and encouragement when they miss a step.
         </p>
       </Section>
-      <ImageGallery>
-        <Image src={image1} objectFit="contain" placeholder="blur" />
-        <Image src={image2} placeholder="blur" />
-        <Image src={image3} placeholder="blur" />
-      </ImageGallery>
+      <ImageGallery images={[image2, image3, image1]} />
     </ProjectPage>
   );
 }

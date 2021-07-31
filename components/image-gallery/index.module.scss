@@ -1,6 +1,25 @@
 .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-sm);
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
+
+  --gap: var(--space-lg);
+  gap: var(--gap);
   list-style: none;
+}
+
+.image {
+  width: calc((100% - 1 * var(--gap)) / 2);
+  border: 1px solid #d2d2d2;
+}
+
+.imageLast {
+  width: 100%;
 }

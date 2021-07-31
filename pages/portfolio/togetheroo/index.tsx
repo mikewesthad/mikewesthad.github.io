@@ -27,10 +27,7 @@ function Phaser() {
           <a href="https://togetheroo.com/playspace">here</a> and invite a friend.
         </p>
       </Section>
-      <ImageGallery>
-        <Image src={image1} placeholder="blur" />
-        <Image src={image2} objectFit="cover" placeholder="blur" />
-      </ImageGallery>
+      <ImageGallery images={[image1, image2]} />
       <Section>
         <YouTubeEmbed width="100%" height="400" videoId="wmhcIe4w8Q0"></YouTubeEmbed>
         <YouTubeEmbed width="100%" height="400" videoId="g3iunJW8spg"></YouTubeEmbed>

@@ -24,10 +24,7 @@ function Phaser() {
           small team of other developers in a fast moving repository.
         </p>
       </Section>
-      <ImageGallery>
-        <Image src={image1} placeholder="blur" />
-        <Image src={image2} placeholder="blur" />
-      </ImageGallery>
+      <ImageGallery images={[image1, image2]} />
     </ProjectPage>
   );
 }

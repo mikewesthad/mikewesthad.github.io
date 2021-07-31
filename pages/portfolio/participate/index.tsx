@@ -39,10 +39,7 @@ function Participate() {
           jumpstart the planning process.
         </p>
       </Section>
-      <ImageGallery>
-        <Image src={sdgImage1} placeholder="blur" />
-        <Image src={sdgImage2} placeholder="blur" />
-      </ImageGallery>
+      <ImageGallery images={[sdgImage1, sdgImage2]} />
       <Section>
         <h2>Find Your Action Plan Quiz</h2>
         <p>
@@ -53,10 +50,7 @@ function Participate() {
           standards.
         </p>
       </Section>
-      <ImageGallery>
-        <Image src={actionImage1} placeholder="blur" />
-        <Image src={actionImage2} placeholder="blur" />
-      </ImageGallery>
+      <ImageGallery images={[actionImage1, actionImage2]} />
     </ProjectPage>
   );
 }

@@ -26,10 +26,7 @@ function Gamefroot() {
           their platform.
         </p>
       </Section>
-      <ImageGallery>
-        <Image src={gamefrootImage1} placeholder="blur" />
-        <Image src={gamefrootImage2} placeholder="blur" />
-      </ImageGallery>
+      <ImageGallery images={[gamefrootImage1, gamefrootImage2]} />
     </ProjectPage>
   );
 }
