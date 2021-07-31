@@ -28,8 +28,8 @@ function Phaser() {
         </p>
       </Section>
       <ImageGallery>
-        <Image src={image1} />
-        <Image src={image2} objectFit="cover" />
+        <Image src={image1} placeholder="blur" />
+        <Image src={image2} objectFit="cover" placeholder="blur" />
       </ImageGallery>
       <Section>
         <YouTubeEmbed width="100%" height="400" videoId="wmhcIe4w8Q0"></YouTubeEmbed>

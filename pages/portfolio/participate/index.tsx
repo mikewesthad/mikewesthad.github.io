@@ -40,8 +40,8 @@ function Participate() {
         </p>
       </Section>
       <ImageGallery>
-        <Image src={sdgImage1} />
-        <Image src={sdgImage2} />
+        <Image src={sdgImage1} placeholder="blur" />
+        <Image src={sdgImage2} placeholder="blur" />
       </ImageGallery>
       <Section>
         <h2>Find Your Action Plan Quiz</h2>
@@ -54,8 +54,8 @@ function Participate() {
         </p>
       </Section>
       <ImageGallery>
-        <Image src={actionImage1} />
-        <Image src={actionImage2} />
+        <Image src={actionImage1} placeholder="blur" />
+        <Image src={actionImage2} placeholder="blur" />
       </ImageGallery>
     </ProjectPage>
   );

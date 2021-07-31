@@ -15,7 +15,7 @@ function ShowcaseItem({ image, title, subtitle, href }: ShowcaseItemProps) {
     <li className={css.item}>
       <Link className="unstyled-link" href={href}>
         <figure className={css.figure}>
-          <Image src={image} layout="fill" objectFit="cover" />
+          <Image src={image} layout="fill" objectFit="cover" placeholder="blur" />
           <figcaption className={css.itemCaption}>
             <div className={css.itemTitle}>{title}</div>
             <div className={css.itemSubtitle}>{subtitle}</div>

@@ -33,10 +33,10 @@ function ExpandableImage({ src }: ExpandableImageProps) {
     <div>
       {isExpanded && (
         <ExpandedImage onClose={close}>
-          <Image src={src} onClick={onClick} className={css.expandableImage} />
+          <Image src={src} onClick={onClick} className={css.expandableImage} placeholder="blur" />
         </ExpandedImage>
       )}
-      <Image src={src} onClick={onClick} className={css.expandableImage} />
+      <Image src={src} onClick={onClick} className={css.expandableImage} placeholder="blur" />
     </div>
   );
 }

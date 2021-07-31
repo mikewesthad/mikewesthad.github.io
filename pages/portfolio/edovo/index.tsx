@@ -33,9 +33,9 @@ function Edovo() {
         </p>
       </Section>
       <ImageGallery>
-        <Image src={image1} objectFit="contain" />
-        <Image src={image2} />
-        <Image src={image3} />
+        <Image src={image1} objectFit="contain" placeholder="blur" />
+        <Image src={image2} placeholder="blur" />
+        <Image src={image3} placeholder="blur" />
       </ImageGallery>
     </ProjectPage>
   );

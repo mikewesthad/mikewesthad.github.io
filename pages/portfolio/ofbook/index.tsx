@@ -41,11 +41,11 @@ function OFBook() {
         </p>
       </Section>
       <ImageGallery>
-        <Image src={image1} />
-        <Image src={image2} />
-        <Image src={image3} />
-        <Image src={image4} />
-        <Image src={image5} />
+        <Image src={image1} placeholder="blur" />
+        <Image src={image2} placeholder="blur" />
+        <Image src={image3} placeholder="blur" />
+        <Image src={image4} placeholder="blur" />
+        <Image src={image5} placeholder="blur" />
       </ImageGallery>
     </ProjectPage>
   );

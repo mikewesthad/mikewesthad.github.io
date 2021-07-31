@@ -27,8 +27,8 @@ function Phaser() {
         </p>
       </Section>
       <ImageGallery>
-        <Image src={image1} />
-        <Image src={image2} />
+        <Image src={image1} placeholder="blur" />
+        <Image src={image2} placeholder="blur" />
       </ImageGallery>
     </ProjectPage>
   );

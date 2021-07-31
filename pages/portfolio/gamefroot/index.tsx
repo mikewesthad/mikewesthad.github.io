@@ -27,8 +27,8 @@ function Gamefroot() {
         </p>
       </Section>
       <ImageGallery>
-        <Image src={gamefrootImage1} />
-        <Image src={gamefrootImage2} />
+        <Image src={gamefrootImage1} placeholder="blur" />
+        <Image src={gamefrootImage2} placeholder="blur" />
       </ImageGallery>
     </ProjectPage>
   );

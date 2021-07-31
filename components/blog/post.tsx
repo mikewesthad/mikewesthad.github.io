@@ -12,7 +12,7 @@ function Post({ imageSrc, title, description, href }: PostProps) {
   return (
     <li className={css.post}>
       <a href={href}>
-        <Image src={imageSrc} alt={`Preview of ${title}`} objectFit="cover" />
+        <Image src={imageSrc} alt={`Preview of ${title}`} objectFit="cover" placeholder="blur" />
       </a>
       <div className={css.details}>
         <h2 className="text--md">{title}</h2>

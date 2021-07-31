@@ -10,7 +10,13 @@ const IndexPage = () => {
       <PageTitle>Home</PageTitle>
       <Section>
         <figure>
-          <Image src={profileImage} alt="Mike Hadley" layout="fill" objectFit="cover" />
+          <Image
+            src={profileImage}
+            alt="Mike Hadley"
+            layout="fill"
+            objectFit="cover"
+            placeholder="blur"
+          />
         </figure>
         <style jsx>{`
           figure {
