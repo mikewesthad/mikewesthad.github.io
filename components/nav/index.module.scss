@@ -33,6 +33,27 @@
   gap: var(--space-lg);
 }
 
+.mobileNavList button {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+}
+
+.mobileNavList {
+  z-index: 9999;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: var(--space-lg);
+  font-size: var(--text-md);
+  flex-direction: column;
+  background: white;
+  align-items: center;
+  justify-content: center;
+  border-left: 3px solid #f7f6eb;
+}
+
 .dropdownTrigger {
   position: relative;
 

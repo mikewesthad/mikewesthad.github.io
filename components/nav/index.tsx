@@ -1,65 +1,35 @@
-import Link from "components/link";
-import { GitHubIconLink, LinkedInIconLink, YouTubeIconLink } from "components/social-links";
-import NavLink from "./nav-link";
+import { useWindowWidth } from "@react-hook/window-size/throttled";
+import { useState } from "react";
+import { useEffect } from "react";
+import DesktopNav from "./desktop-nav";
+import MobileNav from "./mobile-nav";
 import css from "./index.module.scss";
+import Link from "components/link";
 
 function Nav() {
+  const width = useWindowWidth({ initialWidth: undefined });
+
+  const [isRendered, setIsRendered] = useState(false);
+  useEffect(() => {
+    setIsRendered(true);
+  }, []);
+
+  let navContents;
+  if (isRendered) {
+    if (width > 950) {
+      navContents = <DesktopNav />;
+    } else {
+      navContents = <MobileNav />;
+    }
+  }
+
   return (
     <>
       <nav className={css.nav}>
         <Link href="/" className={`unstyled-link ${css.navLogo}`}>
           mikewesthad
         </Link>
-        <ul className={css.navList}>
-          <NavLink href="/" exact={true} tiltLeft={true}>
-            Home
-          </NavLink>
-          <li className={css.dropdownTrigger}>
-            <NavLink href="/portfolio" tiltLeft={false}>
-              Portfolio▼
-            </NavLink>
-            <ul className={css.dropdownList}>
-              <li>
-                <NavLink href="/portfolio/dev" tiltLeft={true}>
-                  Dev
-                </NavLink>
-              </li>
-              <li>
-                <NavLink href="/portfolio/edu" tiltLeft={false}>
-                  Edu
-                </NavLink>
-              </li>
-              <li>
-                <NavLink href="/portfolio/art" tiltLeft={true}>
-                  Art
-                </NavLink>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <NavLink href="/blog" tiltLeft={true}>
-              Blog
-            </NavLink>
-          </li>
-          <li>
-            <NavLink href="/contact" tiltLeft={false}>
-              Contact
-            </NavLink>
-          </li>
-          <li>
-            <ul className={css.socialLinks}>
-              <li>
-                <GitHubIconLink />
-              </li>
-              <li>
-                <LinkedInIconLink />
-              </li>
-              <li>
-                <YouTubeIconLink />
-              </li>
-            </ul>
-          </li>
-        </ul>
+        {navContents}
       </nav>
       <div className={css.divider} />
     </>
