@@ -11,6 +11,8 @@ const animStates = {
   open: { opacity: 1, translateX: 0 },
   closed: { opacity: 0, translateX: "100%" },
 };
+const overlayAnimStates = { open: { opacity: 1 }, closed: { opacity: 0 } };
+const transition = { type: "spring", bounce: 0, duration: 0.4 };
 
 interface MobileNavProps {}
 
@@ -34,61 +36,72 @@ function MobileNav({}: MobileNavProps) {
       </IconButton>
       <AnimatePresence initial={false}>
         {!isCollapsed && (
-          <motion.ul
-            className={cn(css.navList, css.mobileNavList)}
-            key="mobileNav"
+          <motion.div
+            className={css.mobileNavOverlay}
+            key="mobileNavOverlay"
             initial="closed"
             animate="open"
             exit="closed"
-            variants={animStates}
-            transition={{ type: "spring", bounce: 0, duration: 0.4 }}
-            onClick={onClick}
+            variants={overlayAnimStates}
+            transition={transition}
+            onClick={close}
           >
-            <IconButton onClick={close}>
-              <IoClose />
-            </IconButton>
-            <NavLink href="/" exact={true} tiltLeft={true}>
-              Home
-            </NavLink>
-            <li>
-              <NavLink href="/portfolio/dev" tiltLeft={false}>
-                Dev Portfolio
+            <motion.ul
+              className={cn(css.navList, css.mobileNavList)}
+              key="mobileNav"
+              initial="closed"
+              animate="open"
+              exit="closed"
+              variants={animStates}
+              transition={transition}
+              onClick={onClick}
+            >
+              <IconButton onClick={close}>
+                <IoClose />
+              </IconButton>
+              <NavLink href="/" exact={true} tiltLeft={true}>
+                Home
               </NavLink>
-            </li>
-            <li>
-              <NavLink href="/portfolio/edu" tiltLeft={true}>
-                Edu Portfolio
-              </NavLink>
-            </li>
-            <li>
-              <NavLink href="/portfolio/art" tiltLeft={false}>
-                Art Portfolio
-              </NavLink>
-            </li>
-            <li>
-              <NavLink href="/blog" tiltLeft={true}>
-                Blog
-              </NavLink>
-            </li>
-            <li>
-              <NavLink href="/contact" tiltLeft={false}>
-                Contact
-              </NavLink>
-            </li>
-            <li>
-              <ul className={css.socialLinks}>
-                <li>
-                  <GitHubIconLink />
-                </li>
-                <li>
-                  <LinkedInIconLink />
-                </li>
-                <li>
-                  <YouTubeIconLink />
-                </li>
-              </ul>
-            </li>
-          </motion.ul>
+              <li>
+                <NavLink href="/portfolio/dev" tiltLeft={false}>
+                  Dev Portfolio
+                </NavLink>
+              </li>
+              <li>
+                <NavLink href="/portfolio/edu" tiltLeft={true}>
+                  Edu Portfolio
+                </NavLink>
+              </li>
+              <li>
+                <NavLink href="/portfolio/art" tiltLeft={false}>
+                  Art Portfolio
+                </NavLink>
+              </li>
+              <li>
+                <NavLink href="/blog" tiltLeft={true}>
+                  Blog
+                </NavLink>
+              </li>
+              <li>
+                <NavLink href="/contact" tiltLeft={false}>
+                  Contact
+                </NavLink>
+              </li>
+              <li>
+                <ul className={css.socialLinks}>
+                  <li>
+                    <GitHubIconLink />
+                  </li>
+                  <li>
+                    <LinkedInIconLink />
+                  </li>
+                  <li>
+                    <YouTubeIconLink />
+                  </li>
+                </ul>
+              </li>
+            </motion.ul>
+          </motion.div>
         )}
       </AnimatePresence>
     </>
