@@ -1,7 +1,4 @@
 .grid {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -18,6 +15,12 @@
 .image {
   width: calc((100% - 1 * var(--gap)) / 2);
   border: 1px solid #d2d2d2;
+
+  // Force Next/Image wrapper to fit the grid.
+  div {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .imageLast {
