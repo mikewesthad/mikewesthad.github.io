@@ -2,12 +2,15 @@
 // up some redirects to make sure all relevant resume links still work.
 // TODO: fill these in with the final routes.
 const oldSiteRedirects = [
+  // Old urls that match 1-to-1 new urls:
   { from: "/work", to: "/" },
+  { from: "/projects/togetheroo", to: "/portfolio/togetheroo" },
+  { from: "/projects/edovo", to: "/portfolio/edovo" },
+  { from: "/projects/ofbook", to: "/portfolio/ofbook" },
+
+  // Old urls that don't match anything yet:
   { from: "/projects/encoded-objects", to: "/" },
-  { from: "/projects/togetheroo", to: "/" },
-  { from: "/projects/edovo", to: "/" },
   { from: "/projects/sporadic-labs", to: "/" },
-  { from: "/projects/ofbook", to: "/" },
   { from: "/projects/msp-game-design", to: "/portfolio/edu" },
   { from: "/projects/cps-convergence", to: "/portfolio/edu" },
   { from: "/projects/uptake-game-design", to: "/portfolio/edu" },
@@ -24,7 +27,7 @@ const oldSiteRedirects = [
   { from: "/projects/gratuitous-gram", to: "/portfolio/art" },
   { from: "/projects/blink", to: "/portfolio/art" },
   { from: "/projects/public-insecurities", to: "/portfolio/art" },
-  { from: "/projects/j4kdart", to: "/404" },
+  { from: "/projects/j4kdart", to: "/" },
   { from: "/projects/youtube-spaces", to: "/" },
   { from: "/projects/emojify-tracking", to: "/" },
   { from: "/projects/html-form-renderer", to: "/" },
