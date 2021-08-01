@@ -40,7 +40,7 @@ function OFBook() {
           <a href="https://github.com/openframeworks/ofBook">GitHub repository</a>.
         </p>
       </Section>
-      <ImageGallery images={[image1, image2, image3, image4, image5]} />
+      <ImageGallery images={[image1, image2, image3, image4]} />
     </ProjectPage>
   );
 }
