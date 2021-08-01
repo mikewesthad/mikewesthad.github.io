@@ -22,7 +22,7 @@ function TeachingPage() {
             ) at Columbia College Chicago.
           </li>
           <li>
-            Intro to Programming (C#) (
+            Intro to Programming in C# (
             <a href="https://www.youtube.com/watch?v=9TqENGhldWs&list=PL-LDQE9x9hLwldZPPGwqXixr-_DfINfxk&index=2">
               YouTube
             </a>
