@@ -1,0 +1,20 @@
+.skip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: white;
+  padding: 1rem;
+  border: 3px solid var(--link-color);
+  border-top: none;
+  border-radius: 0 0 0.25rem 0.25rem;
+  transform: translateY(-100%);
+  z-index: 99999;
+
+  &:focus {
+    transform: translateY(0);
+  }
+
+  &:visited {
+    border-color: var(--link-color-visited);
+  }
+}
