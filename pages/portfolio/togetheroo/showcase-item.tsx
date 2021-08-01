@@ -1,5 +1,5 @@
 import { ShowcaseItem } from "components/showcase";
-import showcaseImage from "./images/togetheroo-1.png";
+import showcaseImage from "./images/togetheroo-4.png";
 
 interface TogetherooShowcaseItemProps {}
 
