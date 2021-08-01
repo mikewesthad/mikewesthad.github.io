@@ -1,5 +1,8 @@
 import css from "./index.module.scss";
 import { GitHubIconLink, LinkedInIconLink, YouTubeIconLink } from "components/social-links";
+import AnimatedEmoji from "components/animated-emoji";
+
+const emoji = ["🌕", "🌖", "🌗", "🌘", "🌑", "🌒", "🌓", "🌔"];
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -10,6 +13,9 @@ function Footer() {
         <GitHubIconLink />
         <LinkedInIconLink />
         <YouTubeIconLink />
+      </div>
+      <div>
+        <AnimatedEmoji emoji={emoji} className={css.emoji} frameMs={1500} />
       </div>
     </footer>
   );
