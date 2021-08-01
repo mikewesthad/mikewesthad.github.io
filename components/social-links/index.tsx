@@ -2,19 +2,19 @@ import { IoLogoGithub, IoLogoLinkedin, IoLogoYoutube } from "react-icons/io5";
 import IconLink from "./icon-link";
 
 const GitHubIconLink = () => (
-  <IconLink href="https://github.com/mikewesthad">
+  <IconLink screenReaderText="GitHub" href="https://github.com/mikewesthad">
     <IoLogoGithub />
   </IconLink>
 );
 
 const LinkedInIconLink = () => (
-  <IconLink href="https://www.linkedin.com/in/michaelwesthadley/">
+  <IconLink screenReaderText="LinkedIn" href="https://www.linkedin.com/in/michaelwesthadley/">
     <IoLogoLinkedin />
   </IconLink>
 );
 
 const YouTubeIconLink = () => (
-  <IconLink href="https://www.youtube.com/user/mikewesthad">
+  <IconLink screenReaderText="YouTube" href="https://www.youtube.com/user/mikewesthad">
     <IoLogoYoutube />
   </IconLink>
 );

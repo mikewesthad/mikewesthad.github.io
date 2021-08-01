@@ -19,3 +19,12 @@
 .iconLink:focus {
   color: hsl(297, 100%, 20%);
 }
+
+.screenReaderText {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
