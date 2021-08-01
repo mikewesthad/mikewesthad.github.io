@@ -26,4 +26,4 @@ npm run start
 
 ## Deploying
 
-The site is set up to deploy a new version anytime anything is pushed to the master branch.
+The site is set up to deploy a new version anytime anything is pushed to the `main` branch.
