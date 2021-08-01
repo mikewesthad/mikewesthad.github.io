@@ -12,6 +12,11 @@ function ArtPage() {
           This website is in the process of being updated. This page will feature selected art works
           soon. Check back in a couple days 📅.
         </p>
+        <p>
+          In the meantime, check out <a href="https://encodedobjects.com/">Encoded Objects</a>, a
+          collaboration with artist Jonathan Rockford that explores our connection to the
+          environment through the lens of technology.
+        </p>
       </Section>
     </main>
   );
