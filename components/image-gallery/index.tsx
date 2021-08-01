@@ -11,13 +11,8 @@ function ImageGallery({ images }: ImageGalleryProps) {
   return (
     <Section tagName="ul" className={css.grid} fullWidth>
       {images.map((img, i) => {
-        const isLast = i === images.length - 1;
-        const isOdd = i % 2 === 0;
-        const isOrphan = isLast && isOdd;
-        const className = cn(css.image, isOrphan && css.imageLast);
-
         return (
-          <li key={i} className={className}>
+          <li key={i} className={css.image}>
             <ExpandableImage src={img} />
           </li>
         );
