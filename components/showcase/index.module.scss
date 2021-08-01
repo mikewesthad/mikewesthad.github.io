@@ -10,7 +10,11 @@
   gap: var(--gap);
 
   & > * {
-    width: calc((100% - 2 * var(--gap)) / 3);
+    width: calc((100% - 1 * var(--gap)) / 2);
+
+    @media (max-width: 600px) {
+      width: calc((100% - 1 * var(--gap)) / 1);
+    }
   }
 
   margin: var(--space-lg) 0 var(--space-xxl) 0;
