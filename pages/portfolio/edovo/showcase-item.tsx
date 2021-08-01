@@ -8,8 +8,8 @@ function EdovoShowcaseItem({}: EdovoShowcaseItemProps) {
     <ShowcaseItem
       href="/portfolio/edovo"
       image={showcaseImage}
-      title="Web Dev for Incarcerated Learners"
-      subtitle="Online Classes for Edovo"
+      title="Incarcerated Learners"
+      subtitle="Web Dev Classes for Edovo"
     />
   );
 }
