@@ -17,7 +17,7 @@ function OpenSourceShowcase({}: OpenSourceShowcaseProps) {
       <ShowcaseItem
         href="https://github.com/mikewesthad/phaser-matter-collision-plugin"
         image={matterImage}
-        title="Phaser Matter Collision Plugin"
+        title="Matter Collision Plugin"
         subtitle="Physics Plugin"
       />
       <ShowcaseItem
