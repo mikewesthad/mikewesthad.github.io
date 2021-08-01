@@ -14,13 +14,13 @@ function TechnicalWritingShowcase({}: TechnicalWritingShowcaseProps) {
         href="https://github.com/mikewesthad/p5-performance-tips"
         image={performanceImage}
         title="p5 Performance Article"
-        subtitle="Measuring &amp; Optimizing JS in p5"
+        subtitle="Optimizing JS in p5"
       />
       <ShowcaseItem
         href="/blog"
         image={blogImage}
         title="Making Games in JS"
-        subtitle="5-Part Blog Series"
+        subtitle="5-Part Article Series"
       />
       <EdovoShowcaseItem />
     </Showcase>
