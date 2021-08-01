@@ -1,6 +1,12 @@
 import type { AppProps } from "next/app";
+
+// Import just the Raleway styles used for minimizing payload:
+import "@fontsource/raleway/400.css";
+import "@fontsource/raleway/400-italic.css";
+import "@fontsource/raleway/700.css";
+import "@fontsource/raleway/700-italic.css";
+
 import "../global-styles/index.scss";
-import "@fontsource/raleway";
 import SiteLayout from "components/site-layout";
 import Meta from "components/meta";
 import useFoucFix from "../utils/use-fouc-fix";
