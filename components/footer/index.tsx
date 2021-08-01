@@ -1,6 +1,6 @@
 import css from "./index.module.scss";
 import { GitHubIconLink, LinkedInIconLink, YouTubeIconLink } from "components/social-links";
-import AnimatedEmoji from "components/animated-emoji";
+import AnimatedEmoji from "components/emoji/animated-emoji";
 
 const emoji = ["🌕", "🌖", "🌗", "🌘", "🌑", "🌒", "🌓", "🌔"];
 
@@ -15,7 +15,12 @@ function Footer() {
         <YouTubeIconLink />
       </div>
       <div>
-        <AnimatedEmoji emoji={emoji} className={css.emoji} frameMs={1500} />
+        <AnimatedEmoji
+          ariaLabel="Rotating Moon Animation"
+          emoji={emoji}
+          className={css.emoji}
+          frameMs={1500}
+        />
       </div>
     </footer>
   );

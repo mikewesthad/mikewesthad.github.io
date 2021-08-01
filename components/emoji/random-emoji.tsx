@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { randInt } from "utils/random";
+import Emoji from ".";
 
 interface RandomEmojiProps extends React.HTMLProps<HTMLSpanElement> {
   emoji: string[];
+  ariaLabel: string;
 }
 
 function RandomEmoji({ emoji, ...props }: RandomEmojiProps) {
@@ -14,7 +16,7 @@ function RandomEmoji({ emoji, ...props }: RandomEmojiProps) {
     setRandEmoji(emoji[index]);
   }, []);
 
-  return <span {...props}>{randEmoji}</span>;
+  return <Emoji {...props}>{randEmoji}</Emoji>;
 }
 
 export default RandomEmoji;

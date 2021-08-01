@@ -1,8 +1,10 @@
 import { HTMLProps, useState } from "react";
 import { useEffect } from "react";
+import Emoji from ".";
 
 interface AnimatedEmojiProps extends HTMLProps<HTMLSpanElement> {
   emoji: string[];
+  ariaLabel: string;
   frameMs?: number;
 }
 
@@ -22,7 +24,7 @@ function useAnimatedIndex(start: number, max: number, frameMs: number) {
 
 function AnimatedEmoji({ emoji, frameMs = 1000, ...props }: AnimatedEmojiProps) {
   const index = useAnimatedIndex(0, emoji.length - 1, frameMs);
-  return <span {...props}>{emoji[index]}</span>;
+  return <Emoji {...props}>{emoji[index]}</Emoji>;
 }
 
 export default AnimatedEmoji;

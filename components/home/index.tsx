@@ -3,9 +3,10 @@ import Link from "components/link";
 import PageTitle from "components/page-title";
 import Section from "components/container/section";
 import profileImage from "images/mike-hadley-profile.jpg";
-import RandomEmoji from "components/random-emoji";
+import RandomEmoji from "components/emoji/random-emoji";
 import css from "./index.module.scss";
 import Main from "components/main";
+import Emoji from "components/emoji";
 
 const emoji = ["👋", "🖐", "🤙", "✌️"];
 
@@ -30,7 +31,7 @@ function Home({}: HomeProps) {
 
       <Section>
         <h1>
-          Hi, I’m Mike Hadley <RandomEmoji emoji={emoji} />
+          Hi, I’m Mike Hadley <RandomEmoji ariaLabel="Waving Hand" emoji={emoji} />
         </h1>
         <h2>Mission Statement</h2>
         <p>
