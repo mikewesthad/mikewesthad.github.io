@@ -1,0 +1,28 @@
+.footerContainer {
+  text-align: center;
+  font-size: var(--text-sm);
+  color: #b0b0b0;
+  margin: var(--space-sm) auto;
+
+  > * {
+    margin: var(--space-xxxs) auto;
+  }
+}
+
+.footerContainer::before {
+  content: "";
+  display: block;
+  margin: var(--space-xxxs) auto;
+  width: 3rem;
+  border-top: 2px solid #d8d8d8;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xxs);
+}
+
+.emoji {
+  opacity: 0.45;
+}

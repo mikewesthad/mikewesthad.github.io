@@ -1,0 +1,30 @@
+.iconLink {
+  transition: all 250ms;
+
+  & svg {
+    display: block;
+  }
+}
+
+.iconLink,
+.iconLink:visited {
+  color: #b0b0b0;
+}
+
+.iconLink:hover {
+  color: hsl(297, 100%, 34%);
+}
+
+.iconLink:active,
+.iconLink:focus {
+  color: hsl(297, 100%, 20%);
+}
+
+.screenReaderText {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

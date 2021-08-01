@@ -1,0 +1,41 @@
+a {
+  color: var(--link-color);
+  text-decoration: underline var(--link-color);
+  transition: all 150ms;
+  outline: 0.1em dashed transparent;
+  outline-offset: -0.15em;
+}
+
+a:visited {
+  color: var(--link-color-visited);
+  text-decoration-color: var(--link-color-visited-translucent);
+
+  &:hover,
+  &:focus {
+    outline-color: var(--link-color-visited);
+  }
+}
+
+a:hover,
+a:focus {
+  outline-offset: 0.15em;
+  outline-color: var(--link-color);
+  text-decoration-color: transparent;
+  cursor: pointer;
+}
+
+.unstyled-link {
+  &,
+  &:hover,
+  &:focus,
+  &:visited {
+    color: unset;
+    text-decoration: unset;
+    transition: unset;
+    outline: unset;
+    outline-offset: unset;
+    outline-color: unset;
+    outline-style: unset;
+    outline-offset: unset;
+  }
+}

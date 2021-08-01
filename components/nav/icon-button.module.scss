@@ -1,0 +1,18 @@
+.button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: var(--text-xl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  // TODO!
+  &:focus {
+  }
+  &:hover {
+  }
+  &:active {
+  }
+}

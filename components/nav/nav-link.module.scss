@@ -1,0 +1,44 @@
+.navLink {
+  position: relative;
+}
+
+.navLink::before {
+  content: "";
+  transition: all 200ms;
+  content: "";
+  position: absolute;
+  background: #ca83ce;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  z-index: -1;
+  transform-origin: left;
+}
+
+.tiltLeft::before {
+  transform: rotate(1deg) translate(-50%, -50%);
+}
+.tiltRight::before {
+  transform: rotate(-1deg) translate(-50%, -50%);
+}
+
+// Non-active link, focusing or hover - "smallest" UI feedback.
+.navLink:focus::before,
+.navLink:hover::before {
+  height: 100%;
+  width: 60%;
+}
+
+// Active link, no interaction - "medium" UI feedback.
+.navLink.navLinkActive::before {
+  height: 100%;
+  width: 110%;
+}
+
+// Active link, focusing or hover - "max" UI feedback.
+.navLink.navLinkActive:hover::before,
+.navLink.navLinkActive:focus::before {
+  height: 110%;
+  width: 140%;
+}
