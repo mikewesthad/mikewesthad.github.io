@@ -1,27 +1,29 @@
 # mikewesthad
 
-Under construction!
-
 Personal Portfolio website: https://www.mikewesthad.com/
 
 Built with:
 
-- Next.js
-- React
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## Usage
 
-Make sure you have node & npm installed, and then run:
+To run the site under "development" mode, make sure you have node & npm installed, and then run:
 
 ```
 npm install
-npm dev
+npm run dev
 ```
 
-## Building
+To run the site under "production" mode, run:
 
-TODO
+```
+npm run build
+npm run start
+```
 
 ## Deploying
 
-TODO
+The site is set up to deploy a new version anytime anything is pushed to the master branch.
