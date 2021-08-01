@@ -37,12 +37,32 @@ const oldSiteRedirects = [
   { from: "/projects/disconnect", to: "/" },
 ];
 
+// Redirects for npm packages / gh repos that used to point to my GH pages site:
+const ghRedirects = [
+  "navmesh",
+  "lafayette-creative-coding-p5-workshop",
+  "phaser-3-tilemap-blog-posts",
+  "phaser-matter-collision-plugin",
+  "sdg-quiz-game",
+  "sdg-unit-planning-game",
+  "financial-literacy-playlist-games",
+  "phaser-tiled-hull",
+  "emojify",
+  "frontend-javascript-demos",
+];
+
 module.exports = {
   async redirects() {
-    return oldSiteRedirects.map(({ from, to }) => ({
+    const old = oldSiteRedirects.map(({ from, to }) => ({
       source: `${from}(.html)?`,
       destination: to,
       permanent: true,
     }));
+    const gh = ghRedirects.map((repo) => ({
+      source: `/${repo}/:slug*`,
+      destination: `https://mikewesthad.github.io/${repo}/:slug*`,
+      permanent: true,
+    }));
+    return [...old, ...gh];
   },
 };
