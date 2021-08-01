@@ -1,5 +1,5 @@
 import { ShowcaseItem } from "components/showcase";
-import showcaseImage from "./images/tangents.png";
+import showcaseImage from "./images/fig-2.png";
 
 interface OFBookShowcaseItemProps {}
 

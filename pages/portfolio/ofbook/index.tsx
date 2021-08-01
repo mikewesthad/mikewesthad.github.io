@@ -1,12 +1,12 @@
-import Image from "next/image";
 import ProjectPage from "components/project-page";
 import ImageGallery from "components/image-gallery";
-import image1 from "./images/tangents.png";
-import image2 from "./images/intro-screenshot.png";
-import image3 from "./images/meshes-screenshot.png";
-import image4 from "./images/rotating.png";
-import image5 from "./images/editing-vectors.png";
 import Section from "components/container/section";
+import image1 from "./images/ofbook-1.png";
+import image2 from "./images/ofbook-3.png";
+import image3 from "./images/ofbook-4.png";
+import image4 from "./images/ofbook-6.png";
+import image5 from "./images/fig-2.png";
+import image6 from "./images/fig-3.png";
 
 function OFBook() {
   return (
@@ -40,7 +40,7 @@ function OFBook() {
           <a href="https://github.com/openframeworks/ofBook">GitHub repository</a>.
         </p>
       </Section>
-      <ImageGallery images={[image1, image2, image3, image4]} />
+      <ImageGallery images={[image1, image2, image3, image4, image5, image6]} />
     </ProjectPage>
   );
 }
