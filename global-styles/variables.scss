@@ -16,6 +16,9 @@
   --raleway-font-stack: "Raleway", sans-serif;
 
   --text-base-size: 1.25em;
+  @media (max-width: 600px) {
+    --text-base-size: 1em;
+  }
 
   --text-scale-ratio: 1.2;
   --text-scale-ratio-pow2: var(--text-scale-ratio) * var(--text-scale-ratio);
