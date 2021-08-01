@@ -3,6 +3,10 @@ import Link from "components/link";
 import PageTitle from "components/page-title";
 import Section from "components/container/section";
 import profileImage from "images/mike-hadley-profile.jpg";
+import AnimatedEmoji from "components/animated-emoji";
+import RandomEmoji from "components/random-emoji";
+
+const emoji = ["👋", "🖐", "🤙", "✌️"];
 
 const IndexPage = () => {
   return (
@@ -31,7 +35,9 @@ const IndexPage = () => {
       </Section>
 
       <Section>
-        <h1>Hi 👋, I’m Mike Hadley</h1>
+        <h1>
+          Hi, I’m Mike Hadley <RandomEmoji emoji={emoji} />
+        </h1>
         <h2>Mission Statement</h2>
         <p>
           I’m a developer, educator and artist who translates creative ideas into code and teaches
