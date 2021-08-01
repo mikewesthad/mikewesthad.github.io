@@ -9,6 +9,7 @@ import FinancialLiteracyShowcaseItem from "./financial-literacy/showcase-item";
 import TechnicalWritingShowcase from "components/technical-writing-showcase";
 import ArtDevShowcase from "components/art-dev-showcase";
 import Section from "components/container/section";
+import Link from "components/link";
 
 function DevelopmentPage() {
   return (
@@ -17,17 +18,18 @@ function DevelopmentPage() {
       <Section>
         <h1>Development</h1>
         <p>
-          As a developer, I build web apps and game-like tools, often focused on education. Projects
-          range from working on game engines intended to teach programming to digital card games for
-          teachers to help them plan lessons.
+          As a developer, I build web apps, games and playful tools, often focused on helping
+          educators or learners engage with complex systems. Projects range digital card games for
+          teachers to help them plan new lessons to interactive experiences that teach financial
+          literacy concepts to Chicago youth.
         </p>
         <p>
-          In my off time, I also maintain a set of open source tools on GitHub, write about
-          programming and use code as my medium to produce art.
+          I also maintain a set of open source tools to make web game development easier, write
+          about programming and use code as my medium to produce art installations.
         </p>
         <p>
           Below is a selection of my work. If you want to learn more, or want to know what else I've
-          worked on, drop me a line.
+          worked on, <Link href="/contact">drop me a line</Link>.
         </p>
       </Section>
       <Section>
