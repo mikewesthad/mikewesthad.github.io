@@ -1,5 +1,5 @@
 import { ShowcaseItem } from "components/showcase";
-import participateImage from "./images/participate-action-plan-1.png";
+import participateImage from "./images/quiz-2.png";
 
 interface ParticipateShowcaseItemProps {}
 
