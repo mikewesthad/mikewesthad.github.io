@@ -1,0 +1,13 @@
+.figure {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+
+  @media (max-width: 600px) {
+    width: 8rem;
+    height: 8rem;
+  }
+}
