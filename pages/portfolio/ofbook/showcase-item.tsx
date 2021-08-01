@@ -9,7 +9,7 @@ function OFBookShowcaseItem({}: OFBookShowcaseItemProps) {
       href="/portfolio/ofbook"
       image={showcaseImage}
       title="ofBook"
-      subtitle="Open Source Book on Creative Coding"
+      subtitle="Book on Creative Coding"
     />
   );
 }
