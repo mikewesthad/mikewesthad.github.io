@@ -1,4 +1,5 @@
 import Section from "components/container/section";
+import Emoji from "components/emoji";
 import Main from "components/main";
 import PageTitle from "components/page-title";
 
@@ -11,7 +12,8 @@ function TeachingPage() {
         <p>Coming soon!</p>
         <p>
           This website is in the process of being updated. This page will feature selected
-          classes/workshops/etc. soon. Check back in a couple days 📅.
+          classes/workshops/etc. soon. Check back in a couple days{" "}
+          <Emoji ariaLabel="Calendar">📅</Emoji>.
         </p>
         <p>For now, here's a list of some recent classes:</p>
         <ul>

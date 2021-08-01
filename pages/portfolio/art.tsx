@@ -1,4 +1,5 @@
 import Section from "components/container/section";
+import Emoji from "components/emoji";
 import Main from "components/main";
 import PageTitle from "components/page-title";
 
@@ -11,7 +12,7 @@ function ArtPage() {
         <p>Coming soon!</p>
         <p>
           This website is in the process of being updated. This page will feature selected art works
-          soon. Check back in a couple days 📅.
+          soon. Check back in a couple days <Emoji ariaLabel="Calendar">📅</Emoji>.
         </p>
         <p>
           In the meantime, check out <a href="https://encodedobjects.com/">Encoded Objects</a>, a
