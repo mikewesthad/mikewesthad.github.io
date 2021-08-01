@@ -1,5 +1,4 @@
 import Section from "components/container/section";
-import Image from "next/image";
 import ExpandableImage from "components/expandable-image";
 import cn from "classnames";
 import css from "./index.module.scss";
@@ -18,8 +17,8 @@ function ImageGallery({ images }: ImageGalleryProps) {
         const className = cn(css.image, isOrphan && css.imageLast);
 
         return (
-          <li className={className}>
-            <Image src={img} layout="responsive" objectFit="cover" placeholder="blur" />
+          <li key={i} className={className}>
+            <ExpandableImage src={img} />
           </li>
         );
       })}

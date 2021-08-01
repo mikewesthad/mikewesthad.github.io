@@ -1,0 +1,27 @@
+.button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: var(--text-xxl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  margin: 0.5rem;
+  transition: all 250ms;
+  border: 1px solid transparent;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    transform: scale(1.1);
+    border-color: white;
+  }
+
+  &:active {
+    transform: scale(1.2);
+  }
+}

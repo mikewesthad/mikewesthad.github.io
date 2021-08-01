@@ -1,23 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
-import { IoMdClose } from "react-icons/io";
+import ExpandedImage from "./expanded-image";
 import css from "./index.module.scss";
-
-interface ExpandedImageProps {
-  children: React.ReactNode;
-  onClose: () => void;
-}
-
-function ExpandedImage({ children, onClose }: ExpandedImageProps) {
-  return (
-    <div className={css.expandedImageWrapper}>
-      <button onClick={onClose} className={css.closeButton}>
-        <IoMdClose />
-      </button>
-      {children}
-    </div>
-  );
-}
 
 interface ExpandableImageProps {
   src: StaticImageData;
@@ -31,14 +15,19 @@ function ExpandableImage({ src }: ExpandableImageProps) {
 
   return (
     <div>
-      {isExpanded && (
-        <ExpandedImage onClose={close}>
-          <Image src={src} onClick={onClick} className={css.expandableImage} placeholder="blur" />
-        </ExpandedImage>
-      )}
-      <Image src={src} onClick={onClick} className={css.expandableImage} placeholder="blur" />
+      {isExpanded && <ExpandedImage src={src} onClose={close} />}
+      <Image
+        src={src}
+        onClick={onClick}
+        className={css.expandableImage}
+        layout="responsive"
+        objectFit="cover"
+        placeholder="blur"
+      />
     </div>
   );
 }
 
 export default ExpandableImage;
+
+export { ExpandedImage };
