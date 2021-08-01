@@ -23,6 +23,7 @@ function ExpandableImage({ src }: ExpandableImageProps) {
         layout="responsive"
         objectFit="cover"
         placeholder="blur"
+        alt=""
       />
     </div>
   );

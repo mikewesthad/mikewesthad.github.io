@@ -47,7 +47,7 @@ function ExpandedImage({ src, onClose }: ExpandedImageProps) {
             ...imgSize,
           }}
         >
-          <Image src={src} {...imgSize} layout="responsive" placeholder="blur" />
+          <Image src={src} {...imgSize} layout="responsive" placeholder="blur" alt="" />
         </div>
       </div>
     </div>
