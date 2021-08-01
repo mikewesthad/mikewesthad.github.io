@@ -23,8 +23,8 @@ function Phaser() {
           <a href="https://www.colum.edu/">Columbia College Chicago</a>, I created a series of
           digital games and tools for partner organizations. One of those partners was the{" "}
           <a href="https://www.econcouncil.org/">Economic Awareness Council</a>, a non-profit whose
-          mission is equip youth with the skills needed to make economic and financial decisions. I
-          designed and developed a series of serious games (JS, React) for them around financial
+          mission is to equip youth with the skills needed to make economic and financial decisions.
+          I designed and developed a series of serious games (JS, React) for them around financial
           literacy, which have reached thousands of Chicago youth so far.
         </p>
         <p>

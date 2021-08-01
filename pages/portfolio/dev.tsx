@@ -20,9 +20,9 @@ function DevelopmentPage() {
         <h1>Development</h1>
         <p>
           As a developer, I build web apps, games and playful tools, often focused on helping
-          educators or learners engage with complex systems. Projects range digital card games for
-          teachers to help them plan new lessons to interactive experiences that teach financial
-          literacy concepts to Chicago youth.
+          educators or learners engage with complex systems. Projects range from digital card games
+          for teachers to help them plan new lessons, to interactive experiences that teach
+          financial literacy concepts to Chicago youth.
         </p>
         <p>
           I also maintain a set of open source tools to make web game development easier, write
