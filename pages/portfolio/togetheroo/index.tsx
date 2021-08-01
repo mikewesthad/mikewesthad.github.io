@@ -28,8 +28,8 @@ function Phaser() {
         </p>
         <p>
           Development was paused in 2016, but you can open up a play space 
-          <a href="https://togetheroo.com/playspace">here</a> and invite a friend. See the founder's
-          demos and introduction videos below.
+          <a href="https://togetheroo.com/playspace">here</a> and invite a friend. See the
+          founder&apos;s demos and introduction videos below.
         </p>
       </Section>
       <ImageGallery images={[image1, image3, image2, image4]} />

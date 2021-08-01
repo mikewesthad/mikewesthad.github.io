@@ -15,7 +15,7 @@ function TeachingPage() {
           classes/workshops/etc. soon. Check back in a couple days{" "}
           <Emoji ariaLabel="Calendar">📅</Emoji>.
         </p>
-        <p>For now, here's a list of some recent classes:</p>
+        <p>For now, here&apos;s a list of some recent classes:</p>
         <ul>
           <li>
             Web App Programming (

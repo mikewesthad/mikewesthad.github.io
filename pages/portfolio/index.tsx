@@ -9,7 +9,10 @@ const PortfolioPage = () => {
       <PageTitle>Portfolio</PageTitle>
       <Main>
         <h1>Portfolio</h1>
-        <p>Want to see examples of my work? It's broken down into the following categories:</p>
+        <p>
+          Want to see examples of my work? My portfolio is broken down into the following
+          categories:
+        </p>
         <ul>
           <li>
             <Link href="/portfolio/dev">Development</Link>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ProjectPage from "components/project-page";
 import ImageGallery from "components/image-gallery";
 import image1 from "./images/phaser-1.png";
@@ -22,7 +21,7 @@ function Phaser() {
           <a href="https://phaser.io/">Phaser</a> (&gt;30K{" "}
           <a href="https://github.com/photonstorm/phaser">GitHub stars</a>) as the engine moved
           between major versions. I produced thoroughly tested code with extensive documentation and
-          produced 40 guided and annotated code examples for the engine's newsletter, which has
+          produced 40 guided and annotated code examples for the engine&apos;s newsletter, which has
           &gt;8800 developers subscribed.
         </p>
         <p>A few links:</p>

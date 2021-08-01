@@ -17,7 +17,7 @@ function useAnimatedIndex(start: number, max: number, frameMs: number) {
     }, frameMs);
 
     return () => clearInterval(id);
-  }, []);
+  }, [frameMs, max]);
 
   return index;
 }

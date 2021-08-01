@@ -10,7 +10,7 @@ const NotFoundPage = () => {
       <Section>
         <h1>Page Not Found</h1>
         <p>
-          Uh oh! Sorry, I couldn't find the page you were looking for{" "}
+          Uh oh! Sorry, I couldn&apos;t find the page you were looking for{" "}
           <span role="img" aria-label="Pensive emoji">
             👀
           </span>{" "}

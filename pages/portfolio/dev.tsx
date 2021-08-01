@@ -29,8 +29,8 @@ function DevelopmentPage() {
           about programming and use code as my medium to produce art installations.
         </p>
         <p>
-          Below is a selection of my work. If you want to learn more, or want to know what else I've
-          worked on, <Link href="/contact">drop me a line</Link>.
+          Below is a selection of my work. If you want to learn more, or want to know what else
+          I&apos;ve worked on, <Link href="/contact">drop me a line</Link>.
         </p>
       </Section>
       <Section>

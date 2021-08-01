@@ -6,7 +6,6 @@ import profileImage from "images/mike-hadley-profile.jpg";
 import RandomEmoji from "components/emoji/random-emoji";
 import css from "./index.module.scss";
 import Main from "components/main";
-import Emoji from "components/emoji";
 
 const emoji = ["👋", "🖐", "🤙", "✌️"];
 
@@ -42,13 +41,16 @@ function Home({}: HomeProps) {
         </p>
         <p>
           Have a creative vision that you want to bring to life? Get in touch and{" "}
-          <Link href="/contact">let's chat</Link>.
+          <Link href="/contact">let&apos;s chat</Link>.
         </p>
       </Section>
 
       <Section>
         <h2>Portfolio</h2>
-        <p>Want to see examples of my work? It's broken down into the following categories:</p>
+        <p>
+          Want to see examples of my work? My portfolio is broken down into the following
+          categories:
+        </p>
         <ul>
           <li>
             <Link href="/portfolio/dev">Development</Link>

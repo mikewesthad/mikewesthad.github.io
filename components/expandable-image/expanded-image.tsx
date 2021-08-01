@@ -26,7 +26,7 @@ function ExpandedImage({ src, onClose }: ExpandedImageProps) {
     const scaledWidth = scale * src.width;
     const scaledHeight = scale * src.height;
     setImgSize({ width: scaledWidth, height: scaledHeight });
-  }, [windowWidth, windowHeight]);
+  }, [windowWidth, windowHeight, src.width, src.height]);
 
   const onClick: React.MouseEventHandler<HTMLElement> = (e) => {
     const target = e.target as HTMLElement;

@@ -29,7 +29,7 @@ function Participate() {
         <p>
           Participate is a platform that helps organizations build online communities for
           collaboration and knowledge creation. In this collaboration, we were focused on building
-          new experiences for the community of teachers around the United Nation's{" "}
+          new experiences for the community of teachers around the United Nation&apos;s{" "}
           <a href="https://sdgs.un.org/goals">Sustainable Development Goals</a> (SDGs), a set of
           goals for achieving a better and more sustainable future for everyone.
         </p>
@@ -50,7 +50,7 @@ function Participate() {
       <Section>
         <h2>Find Your Action Plan Quiz</h2>
         <p>
-          In the "Find Your Action Plan" quiz (
+          In the &ldquo;Find Your Action Plan&rdquo; quiz (
           <a href="https://explore.participate.com/find-your-action-plan">play</a>), teachers and/or
           students answer a series of short questions and then are presented with a personalized
           activity they can do to make a difference in the world (e.g. plant a pollinator garden or

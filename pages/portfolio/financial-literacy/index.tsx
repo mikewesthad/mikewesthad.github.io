@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ProjectPage from "components/project-page";
 import Section from "components/container/section";
 import ImageGallery from "components/image-gallery";
@@ -29,9 +28,9 @@ function Phaser() {
           literacy, which have reached thousands of Chicago youth so far.
         </p>
         <p>
-          These games and tools were launched as part of "learning playlists" on financial literacy,
-          a sequence of resources, activities and videos designed to teach Chicago youth important
-          concepts like budgeting and credit.
+          These games and tools were launched as part of &ldquo;learning playlists&rdquo; on
+          financial literacy, a sequence of resources, activities and videos designed to teach
+          Chicago youth important concepts like budgeting and credit.
         </p>
       </Section>
       <ImageGallery images={[image1, image2, image3, image4, image5, image6, image7, image8]} />

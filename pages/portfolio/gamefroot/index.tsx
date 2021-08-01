@@ -16,10 +16,10 @@ function Gamefroot() {
       <Section>
         <h2>Overview</h2>
         <p>
-          I rebuilt and modernized Gamefroot's game editor from the ground up (TypeScript, Phaser
-          game engine, React). <a href="https://make.gamefroot.com/">Gamefroot</a> is a cloud-based
-          platform for making 2D games. It aims to make learning how to design and code a game as
-          accessible and exciting as possible.
+          I rebuilt and modernized Gamefroot&apos;s game editor from the ground up (TypeScript,
+          Phaser game engine, React). <a href="https://make.gamefroot.com/">Gamefroot</a> is a
+          cloud-based platform for making 2D games. It aims to make learning how to design and code
+          a game as accessible and exciting as possible.
         </p>
         <p>
           Their existing web game editor was built on their own custom game engine, which had become

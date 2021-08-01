@@ -14,7 +14,7 @@ function RandomEmoji({ emoji, ...props }: RandomEmojiProps) {
   useEffect(() => {
     const index = randInt(0, emoji.length - 1);
     setRandEmoji(emoji[index]);
-  }, []);
+  }, [emoji]);
 
   return <Emoji {...props}>{randEmoji}</Emoji>;
 }
