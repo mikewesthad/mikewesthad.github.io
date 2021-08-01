@@ -1,6 +1,5 @@
 import Section from "components/container/section";
 import ExpandableImage from "components/expandable-image";
-import cn from "classnames";
 import css from "./index.module.scss";
 
 interface ImageGalleryProps {
