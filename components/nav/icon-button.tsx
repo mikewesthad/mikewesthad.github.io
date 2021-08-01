@@ -3,11 +3,12 @@ import css from "./icon-button.module.scss";
 
 interface IconButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
+  ariaLabel: string;
 }
 
-function IconButton({ children, className, ...props }: IconButtonProps) {
+function IconButton({ children, className, ariaLabel, ...props }: IconButtonProps) {
   return (
-    <button className={cn(css.button, className)} {...props}>
+    <button aria-label={ariaLabel} className={cn(css.button, className)} {...props}>
       {children}
     </button>
   );

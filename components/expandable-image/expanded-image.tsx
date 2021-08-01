@@ -37,7 +37,7 @@ function ExpandedImage({ src, onClose }: ExpandedImageProps) {
 
   return (
     <div className={css.fixedContainer} onClick={onClick}>
-      <IconButton onClick={onClose} className={css.closeButton}>
+      <IconButton ariaLabel="Close Image" onClick={onClose} className={css.closeButton}>
         <IoMdClose />
       </IconButton>
       <div className={css.expandedImageZone} ref={ref}>

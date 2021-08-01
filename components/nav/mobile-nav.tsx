@@ -31,7 +31,7 @@ function MobileNav({}: MobileNavProps) {
 
   return (
     <>
-      <IconButton onClick={open}>
+      <IconButton ariaLabel="Open Navigation Menu" onClick={open}>
         <IoMenu />
       </IconButton>
       <AnimatePresence initial={false}>
@@ -56,7 +56,7 @@ function MobileNav({}: MobileNavProps) {
               transition={transition}
               onClick={onClick}
             >
-              <IconButton onClick={close}>
+              <IconButton ariaLabel="Close Navigation Menu" onClick={close}>
                 <IoClose />
               </IconButton>
               <NavLink href="/" exact={true} tiltLeft={true}>
