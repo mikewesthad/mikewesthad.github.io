@@ -2,6 +2,7 @@ import { useForm } from "@formspree/react";
 import PageTitle from "components/page-title";
 import Section from "components/container/section";
 import Form from "./form";
+import Main from "components/main";
 
 interface ContactProps {}
 
@@ -9,7 +10,7 @@ function Contact({}: ContactProps) {
   const [state, handleSubmit] = useForm("mqkwbzyb");
 
   return (
-    <main>
+    <Main>
       <PageTitle>Contact</PageTitle>
       <Section>
         <h1>Get in Touch</h1>
@@ -19,7 +20,7 @@ function Contact({}: ContactProps) {
         </p>
         <Form state={state} handleSubmit={handleSubmit} />
       </Section>
-    </main>
+    </Main>
   );
 }
 

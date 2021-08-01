@@ -1,9 +1,10 @@
 import Section from "components/container/section";
+import Main from "components/main";
 import PageTitle from "components/page-title";
 
 function ArtPage() {
   return (
-    <main>
+    <Main>
       <PageTitle>Art</PageTitle>
       <Section>
         <h1>Art Portfolio</h1>
@@ -18,7 +19,7 @@ function ArtPage() {
           environment through the lens of technology.
         </p>
       </Section>
-    </main>
+    </Main>
   );
 }
 

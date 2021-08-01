@@ -5,6 +5,7 @@ import Section from "components/container/section";
 import profileImage from "images/mike-hadley-profile.jpg";
 import RandomEmoji from "components/random-emoji";
 import css from "./index.module.scss";
+import Main from "components/main";
 
 const emoji = ["👋", "🖐", "🤙", "✌️"];
 
@@ -12,7 +13,7 @@ interface HomeProps {}
 
 function Home({}: HomeProps) {
   return (
-    <main>
+    <Main>
       <PageTitle>Home</PageTitle>
 
       <Section>
@@ -59,7 +60,7 @@ function Home({}: HomeProps) {
           </li>
         </ul>
       </Section>
-    </main>
+    </Main>
   );
 }
 

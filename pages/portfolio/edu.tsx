@@ -1,9 +1,10 @@
 import Section from "components/container/section";
+import Main from "components/main";
 import PageTitle from "components/page-title";
 
 function TeachingPage() {
   return (
-    <main>
+    <Main>
       <PageTitle>Teaching</PageTitle>
       <Section>
         <h1>Teaching Porfolio</h1>
@@ -52,7 +53,7 @@ function TeachingPage() {
           </li>
         </ul>
       </Section>
-    </main>
+    </Main>
   );
 }
 

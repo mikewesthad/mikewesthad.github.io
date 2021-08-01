@@ -10,10 +10,11 @@ import TechnicalWritingShowcase from "components/technical-writing-showcase";
 import ArtDevShowcase from "components/art-dev-showcase";
 import Section from "components/container/section";
 import Link from "components/link";
+import Main from "components/main";
 
 function DevelopmentPage() {
   return (
-    <main>
+    <Main>
       <PageTitle>Development</PageTitle>
       <Section>
         <h1>Development</h1>
@@ -54,7 +55,7 @@ function DevelopmentPage() {
         <h2>Code-Based Art</h2>
         <ArtDevShowcase />
       </Section>
-    </main>
+    </Main>
   );
 }
 

@@ -14,6 +14,7 @@ function Post({ imageSrc, title, description, href }: PostProps) {
       <a href={href} className={css.imageLink}>
         <Image src={imageSrc} alt={`Preview of ${title}`} objectFit="cover" placeholder="blur" />
       </a>
+      <div>Test</div>
       <div className={css.details}>
         <h2 className="text--md">{title}</h2>
         <p>{description}</p>

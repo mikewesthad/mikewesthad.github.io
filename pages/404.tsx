@@ -1,10 +1,11 @@
 import Section from "components/container/section";
 import Link from "components/link";
+import Main from "components/main";
 import PageTitle from "components/page-title";
 
 const NotFoundPage = () => {
   return (
-    <main>
+    <Main>
       <PageTitle>Not Found!</PageTitle>
       <Section>
         <h1>Page Not Found</h1>
@@ -20,7 +21,7 @@ const NotFoundPage = () => {
           </p>
         </p>
       </Section>
-    </main>
+    </Main>
   );
 };
 

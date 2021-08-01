@@ -1,3 +1,4 @@
+import Main from "components/main";
 import BackToPortfolio from "./back-to-portfolio-section";
 
 interface ProjectPageProps {
@@ -7,10 +8,10 @@ interface ProjectPageProps {
 
 function ProjectPage({ backTo, children }: ProjectPageProps) {
   return (
-    <main>
+    <Main>
       {children}
       <BackToPortfolio backTo={backTo} />
-    </main>
+    </Main>
   );
 }
 

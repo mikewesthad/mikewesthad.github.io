@@ -5,6 +5,7 @@ import DesktopNav from "./desktop-nav";
 import MobileNav from "./mobile-nav";
 import css from "./index.module.scss";
 import Link from "components/link";
+import SkipToMainLink from "components/skip-to-main-link";
 
 function Nav() {
   const width = useWindowWidth({ initialWidth: undefined });
@@ -25,6 +26,7 @@ function Nav() {
 
   return (
     <>
+      <SkipToMainLink />
       <nav className={css.nav}>
         <Link href="/" className={`unstyled-link ${css.navLogo}`}>
           mikewesthad

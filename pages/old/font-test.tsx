@@ -1,11 +1,12 @@
 import Container from "components/container";
+import Main from "components/main";
 import PageTitle from "components/page-title";
 
 const FontTestPage = () => {
   return (
     <Container>
       <PageTitle>Test</PageTitle>
-      <main>
+      <Main>
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
@@ -46,7 +47,7 @@ const FontTestPage = () => {
           <li>Item 3</li>
           <li>Item 4</li>
         </ul>
-      </main>
+      </Main>
     </Container>
   );
 };

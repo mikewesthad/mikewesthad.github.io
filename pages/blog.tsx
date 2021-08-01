@@ -1,14 +1,15 @@
 import Blog from "components/blog";
+import Main from "components/main";
 import PageTitle from "components/page-title";
 
 interface BlogPageProps {}
 
 function BlogPage({}: BlogPageProps) {
   return (
-    <main>
+    <Main>
       <PageTitle>Blog</PageTitle>
       <Blog />
-    </main>
+    </Main>
   );
 }
 
