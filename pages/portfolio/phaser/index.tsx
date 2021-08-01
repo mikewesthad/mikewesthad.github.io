@@ -11,7 +11,7 @@ import Section from "components/container/section";
 
 function Phaser() {
   return (
-    <ProjectPage backTo="dev">
+    <ProjectPage pageTitle="Phaser" backTo="dev">
       <Section>
         <h1>Phaser</h1>
       </Section>

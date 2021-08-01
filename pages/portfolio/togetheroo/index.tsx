@@ -13,7 +13,7 @@ import Section from "components/container/section";
 
 function Phaser() {
   return (
-    <ProjectPage backTo="dev">
+    <ProjectPage pageTitle="Togetheroo" backTo="dev">
       <Section>
         <h1>Togetheroo</h1>
       </Section>

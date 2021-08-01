@@ -15,7 +15,7 @@ import Section from "components/container/section";
 
 function Participate() {
   return (
-    <ProjectPage backTo="dev">
+    <ProjectPage pageTitle="Educator Tools for Participate" backTo="dev">
       <Section>
         <h1>Educator Tools for Participate</h1>
       </Section>

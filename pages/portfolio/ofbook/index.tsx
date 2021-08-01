@@ -10,7 +10,7 @@ import image6 from "./images/fig-3.png";
 
 function OFBook() {
   return (
-    <ProjectPage backTo="dev">
+    <ProjectPage pageTitle="ofBook" backTo="dev">
       <Section>
         <h1>ofBook</h1>
       </Section>

@@ -13,7 +13,7 @@ import image8 from "./images/budget-2.png";
 
 function Phaser() {
   return (
-    <ProjectPage backTo="dev">
+    <ProjectPage pageTitle="Financial Literacy Games" backTo="dev">
       <Section>
         <h1>Financial Literacy Games</h1>
       </Section>

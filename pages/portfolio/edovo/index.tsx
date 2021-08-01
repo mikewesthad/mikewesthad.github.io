@@ -8,7 +8,7 @@ import image3 from "./images/reading-css-09.png";
 
 function Edovo() {
   return (
-    <ProjectPage backTo="dev">
+    <ProjectPage pageTitle="Edovo Web Dev Courses" backTo="dev">
       <Section>
         <h1>Edovo Web Dev Courses</h1>
       </Section>

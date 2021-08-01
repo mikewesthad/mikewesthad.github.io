@@ -9,7 +9,7 @@ import Link from "components/link";
 
 function Gamefroot() {
   return (
-    <ProjectPage backTo="dev">
+    <ProjectPage pageTitle="Gamefroot" backTo="dev">
       <Section>
         <h1>Gamefroot</h1>
       </Section>
