@@ -3,7 +3,6 @@ import Link from "components/link";
 import PageTitle from "components/page-title";
 import Section from "components/container/section";
 import profileImage from "images/mike-hadley-profile.jpg";
-import AnimatedEmoji from "components/animated-emoji";
 import RandomEmoji from "components/random-emoji";
 
 const emoji = ["👋", "🖐", "🤙", "✌️"];
