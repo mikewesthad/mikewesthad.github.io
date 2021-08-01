@@ -1,5 +1,5 @@
 import { ShowcaseItem } from "components/showcase";
-import showcaseImage from "./images/gamefroot-1.png";
+import showcaseImage from "./images/gamefroot-3.png";
 
 interface GamefrootShowcaseItemProps {}
 

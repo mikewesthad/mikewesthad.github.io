@@ -1,9 +1,11 @@
-import Image from "next/image";
 import ImageGallery from "components/image-gallery";
 import ProjectPage from "components/project-page";
 import gamefrootImage1 from "./images/gamefroot-1.png";
-import gamefrootImage2 from "./images/gamefroot-2.png";
+import gamefrootImage4 from "./images/gamefroot-4.png";
+import gamefrootImage5 from "./images/gamefroot-5.png";
+import gamefrootImage6 from "./images/gamefroot-6.png";
 import Section from "components/container/section";
+import Link from "components/link";
 
 function Gamefroot() {
   return (
@@ -21,12 +23,12 @@ function Gamefroot() {
         </p>
         <p>
           Their existing web game editor was built on their own custom game engine, which had become
-          a drain on their development team to maintain. They brought me in based on my game engine
-          work to rebuild their editor in the open source Phaser game engine and add new features to
-          their platform.
+          a drain on their development team to maintain. They brought me in based on{" "}
+          <Link href="/portfolio/phaser">my game engine work</Link> to rebuild their editor in a
+          more maintainable way and add new features to their platform.
         </p>
       </Section>
-      <ImageGallery images={[gamefrootImage1, gamefrootImage2]} />
+      <ImageGallery images={[gamefrootImage1, gamefrootImage4, gamefrootImage5, gamefrootImage6]} />
     </ProjectPage>
   );
 }
