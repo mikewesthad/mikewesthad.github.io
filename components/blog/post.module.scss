@@ -10,3 +10,10 @@
     margin-top: 0;
   }
 }
+
+@media (max-width: 500px) {
+  .post {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -11,7 +11,7 @@ interface PostProps {
 function Post({ imageSrc, title, description, href }: PostProps) {
   return (
     <li className={css.post}>
-      <a href={href}>
+      <a href={href} className={css.imageLink}>
         <Image src={imageSrc} alt={`Preview of ${title}`} objectFit="cover" placeholder="blur" />
       </a>
       <div className={css.details}>
