@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "print-ip": "ipconfig | grep \"IPv4\""
+    "print-ip": "ipconfig | grep \"IPv4\"",
+    "tsc": "tsc"
   },
   "dependencies": {
     "@fontsource/raleway": "^4.5.0",
