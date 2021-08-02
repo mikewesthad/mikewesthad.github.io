@@ -1,7 +1,7 @@
 .footerContainer {
   text-align: center;
   font-size: var(--text-sm);
-  color: #b0b0b0;
+  color: #595959;
   margin: var(--space-sm) auto;
 
   > * {
@@ -14,7 +14,7 @@
   display: block;
   margin: var(--space-xxxs) auto;
   width: 3rem;
-  border-top: 2px solid #d8d8d8;
+  border-top: 1px solid lighten(#595959, 30%);
 }
 
 .socialLinks {
