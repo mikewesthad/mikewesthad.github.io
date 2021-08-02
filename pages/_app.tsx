@@ -25,3 +25,19 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
     </SiteLayout>
   );
 }
+
+// Just a welcome message to the console peeking folks :)
+console.log(
+  `%c                                                                       
+     __   __  ___     _______  __   __  _______  ______    _______     
+    |  | |  ||   |   |       ||  | |  ||       ||    _ |  |       |    
+    |  |_|  ||   |   |_     _||  |_|  ||    ___||   | ||  |    ___|    
+    |       ||   |     |   |  |       ||   |___ |   |_||_ |   |___     
+    |       ||   |     |   |  |       ||    ___||    __  ||    ___|    
+    |   _   ||   |     |   |  |   _   ||   |___ |   |  | ||   |___     
+    |__| |__||___|     |___|  |__| |__||_______||___|  |_||_______|    
+                                                                       
+                        Thanks for stopping by!                        
+                                                                       `,
+  "font-weight: bold; font-size: 12px; color: #fcbfff; text-shadow: 1px 1px 0px #640069;"
+);
