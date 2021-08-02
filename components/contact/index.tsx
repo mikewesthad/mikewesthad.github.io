@@ -3,6 +3,7 @@ import PageTitle from "components/page-title";
 import Section from "components/container/section";
 import Form from "./form";
 import Main from "components/main";
+import PageDescription from "components/page-description";
 
 interface ContactProps {}
 
@@ -12,6 +13,8 @@ function Contact({}: ContactProps) {
   return (
     <Main>
       <PageTitle>Contact</PageTitle>
+      <PageDescription>Get in touch with Michael Hadley to hire him.</PageDescription>
+
       <Section>
         <h1>Get in Touch</h1>
         <p>

@@ -2,12 +2,15 @@ import Section from "components/container/section";
 import Emoji from "components/emoji";
 import Link from "components/link";
 import Main from "components/main";
+import PageDescription from "components/page-description";
 import PageTitle from "components/page-title";
 
 function ArtPage() {
   return (
     <Main>
       <PageTitle>Art</PageTitle>
+      <PageDescription>Michael Hadley&apos;s art portfolio.</PageDescription>
+
       <Section>
         <h1>Art Portfolio</h1>
         <p>Coming soon!</p>

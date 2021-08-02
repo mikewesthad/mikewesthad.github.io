@@ -7,6 +7,7 @@ const PortfolioPage = () => {
   return (
     <Container>
       <PageTitle>Portfolio</PageTitle>
+      <PageDescription>Michael Hadley&apos;s portfolio.</PageDescription>
       <Main>
         <h1>Portfolio</h1>
         <p>

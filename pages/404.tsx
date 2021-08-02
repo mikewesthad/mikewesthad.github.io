@@ -1,12 +1,15 @@
 import Section from "components/container/section";
 import Link from "components/link";
 import Main from "components/main";
+import PageDescription from "components/page-description";
 import PageTitle from "components/page-title";
 
 const NotFoundPage = () => {
   return (
     <Main>
       <PageTitle>Not Found!</PageTitle>
+      <PageDescription>The page you were looking for cannot be found.</PageDescription>
+
       <Section>
         <h1>Page Not Found</h1>
         <p>

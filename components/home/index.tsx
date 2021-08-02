@@ -6,6 +6,7 @@ import profileImage from "images/mike-hadley-profile.jpg";
 import RandomEmoji from "components/emoji/random-emoji";
 import css from "./index.module.scss";
 import Main from "components/main";
+import PageDescription from "components/page-description";
 
 const emoji = ["👋", "🖐", "🤙", "✌️"];
 
@@ -15,6 +16,7 @@ function Home({}: HomeProps) {
   return (
     <Main>
       <PageTitle>Home</PageTitle>
+      <PageDescription>Michael Hadley&pos;s home page and mission statement.</PageDescription>
 
       <Section>
         <figure className={css.figure}>

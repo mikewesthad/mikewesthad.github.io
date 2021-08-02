@@ -11,11 +11,13 @@ import ArtDevShowcase from "components/art-dev-showcase";
 import Section from "components/container/section";
 import Link from "components/link";
 import Main from "components/main";
+import PageDescription from "components/page-description";
 
 function DevelopmentPage() {
   return (
     <Main>
       <PageTitle>Development</PageTitle>
+      <PageDescription>Michael Hadley&apos;s developer portfolio.</PageDescription>
       <Section>
         <h1>Development</h1>
         <p>

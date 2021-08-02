@@ -2,12 +2,14 @@ import Section from "components/container/section";
 import Emoji from "components/emoji";
 import Link from "components/link";
 import Main from "components/main";
+import PageDescription from "components/page-description";
 import PageTitle from "components/page-title";
 
 function TeachingPage() {
   return (
     <Main>
       <PageTitle>Teaching</PageTitle>
+      <PageDescription>Michael Hadley&apos;s teaching portfolio.</PageDescription>
       <Section>
         <h1>Teaching Porfolio</h1>
         <p>Coming soon!</p>
