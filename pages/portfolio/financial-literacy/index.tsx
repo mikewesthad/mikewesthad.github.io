@@ -9,6 +9,7 @@ import image5 from "./images/credit-3.png";
 import image6 from "./images/credit-4.png";
 import image7 from "./images/budget-1.png";
 import image8 from "./images/budget-2.png";
+import Link from "components/link";
 
 function Phaser() {
   return (
@@ -20,12 +21,12 @@ function Phaser() {
         <h2>Overview</h2>
         <p>
           As part of my role as Learning Product Developer at{" "}
-          <a href="https://www.colum.edu/">Columbia College Chicago</a>, I created a series of
+          <Link href="https://www.colum.edu/">Columbia College Chicago</Link>, I created a series of
           digital games and tools for partner organizations. One of those partners was the{" "}
-          <a href="https://www.econcouncil.org/">Economic Awareness Council</a>, a non-profit whose
-          mission is to equip youth with the skills needed to make economic and financial decisions.
-          I designed and developed a series of serious games (JS, React) for them around financial
-          literacy, which have reached thousands of Chicago youth so far.
+          <Link href="https://www.econcouncil.org/">Economic Awareness Council</Link>, a non-profit
+          whose mission is to equip youth with the skills needed to make economic and financial
+          decisions. I designed and developed a series of serious games (JS, React) for them around
+          financial literacy, which have reached thousands of Chicago youth so far.
         </p>
         <p>
           These games and tools were launched as part of &ldquo;learning playlists&rdquo; on

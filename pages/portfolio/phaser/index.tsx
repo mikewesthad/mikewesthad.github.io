@@ -7,6 +7,7 @@ import image4 from "./images/phaser-example-2.png";
 import image5 from "./images/phaser-example-3.png";
 import image6 from "./images/phaser-example-4.png";
 import Section from "components/container/section";
+import Link from "components/link";
 
 function Phaser() {
   return (
@@ -18,31 +19,31 @@ function Phaser() {
         <h2>Overview</h2>
         <p>
           I designed and modernized key parts of the API for the popular JS game engine{" "}
-          <a href="https://phaser.io/">Phaser</a> (&gt;30K{" "}
-          <a href="https://github.com/photonstorm/phaser">GitHub stars</a>) as the engine moved
-          between major versions. I produced thoroughly tested code with extensive documentation and
-          produced 40 guided and annotated code examples for the engine&apos;s newsletter, which has
-          &gt;8800 developers subscribed.
+          <Link href="https://phaser.io/">Phaser</Link> (&gt;30K{" "}
+          <Link href="https://github.com/photonstorm/phaser">GitHub stars</Link>) as the engine
+          moved between major versions. I produced thoroughly tested code with extensive
+          documentation and produced 40 guided and annotated code examples for the engine&apos;s
+          newsletter, which has &gt;8800 developers subscribed.
         </p>
         <p>A few links:</p>
         <ul>
           <li>
-            <a href="https://madmimi.com/p/d7093b">Example newsletter writeup</a>
+            <Link href="https://madmimi.com/p/d7093b">Example newsletter writeup</Link>
           </li>
           <li>
-            <a href="https://labs.phaser.io/view.html?src=src\tilemap\collision\matter%20platformer%20with%20wall%20jumping.js">
+            <Link href="https://labs.phaser.io/view.html?src=src\tilemap\collision\matter%20platformer%20with%20wall%20jumping.js">
               Wall Jumping Platformer Example
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://labs.phaser.io/view.html?src=src\tilemap\collision\matter%20platformer%20modify%20map.js">
+            <Link href="https://labs.phaser.io/view.html?src=src\tilemap\collision\matter%20platformer%20modify%20map.js">
               Modifying Map Example
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://labs.phaser.io/view.html?src=src\tilemap\dungeon%20generator.js">
+            <Link href="https://labs.phaser.io/view.html?src=src\tilemap\dungeon%20generator.js">
               Dungeon Generator Example
-            </a>
+            </Link>
           </li>
         </ul>
         <p>

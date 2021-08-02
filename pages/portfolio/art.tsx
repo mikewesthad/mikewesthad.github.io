@@ -1,5 +1,6 @@
 import Section from "components/container/section";
 import Emoji from "components/emoji";
+import Link from "components/link";
 import Main from "components/main";
 import PageTitle from "components/page-title";
 
@@ -15,8 +16,8 @@ function ArtPage() {
           soon. Check back in a couple days <Emoji ariaLabel="Calendar">📅</Emoji>.
         </p>
         <p>
-          In the meantime, check out <a href="https://encodedobjects.com/">Encoded Objects</a>, a
-          collaboration with artist Jonathan Rockford that explores our connection to the
+          In the meantime, check out <Link href="https://encodedobjects.com/">Encoded Objects</Link>
+          , a collaboration with artist Jonathan Rockford that explores our connection to the
           environment through the lens of technology.
         </p>
       </Section>

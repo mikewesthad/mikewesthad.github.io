@@ -1,3 +1,4 @@
+import Link from "components/link";
 import css from "./icon-link.module.scss";
 
 interface IconLinkProps {
@@ -9,9 +10,9 @@ interface IconLinkProps {
 function IconLink({ href, children, screenReaderText }: IconLinkProps) {
   return (
     <div>
-      <a className={`unstyled-link ${css.iconLink}`} href={href}>
+      <Link showExternalIcon={false} className={`unstyled-link ${css.iconLink}`} href={href}>
         {children} <span className={css.screenReaderText}>{screenReaderText}</span>
-      </a>
+      </Link>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import Section from "components/container/section";
 import Emoji from "components/emoji";
+import Link from "components/link";
 import Main from "components/main";
 import PageTitle from "components/page-title";
 
@@ -19,39 +20,41 @@ function TeachingPage() {
         <ul>
           <li>
             Web App Programming (
-            <a href="https://www.youtube.com/watch?v=OnYyB0_lzcg&list=PL-LDQE9x9hLwUAESe_YJxhXU5ZjLgtq4S&index=2">
+            <Link href="https://www.youtube.com/watch?v=OnYyB0_lzcg&list=PL-LDQE9x9hLwUAESe_YJxhXU5ZjLgtq4S&index=2">
               YouTube
-            </a>
+            </Link>
             ) at Columbia College Chicago.
           </li>
           <li>
             Intro to Programming in C# (
-            <a href="https://www.youtube.com/watch?v=9TqENGhldWs&list=PL-LDQE9x9hLwldZPPGwqXixr-_DfINfxk&index=2">
+            <Link href="https://www.youtube.com/watch?v=9TqENGhldWs&list=PL-LDQE9x9hLwldZPPGwqXixr-_DfINfxk&index=2">
               YouTube
-            </a>
+            </Link>
             ) at Columbia College Chicago.
           </li>
           <li>Code Sprints at Columbia College Chicago.</li>
           <li>Game Engine Scripting at Columbia College Chicago.</li>
           <li>
-            Web Art (<a href="https://mikewesthad.github.io/saic-webart/">Class Site</a>) at The
-            School of the Art Institute of Chicago.
+            Web Art (<Link href="https://mikewesthad.github.io/saic-webart/">Class Site</Link>) at
+            The School of the Art Institute of Chicago.
           </li>
           <li>
             Interactive 3D (
-            <a href="https://mikewesthad.github.io/uic-interactive3d-spring2017/">Class Site</a>) at
-            University of Illinois Chicago.
+            <Link href="https://mikewesthad.github.io/uic-interactive3d-spring2017/">
+              Class Site
+            </Link>
+            ) at University of Illinois Chicago.
           </li>
           <li>
             Game Play (
-            <a href="https://mikewesthad.github.io/uic-gameplay-spring2017/">Class Site</a>) at
-            University of Illinois Chicago.
+            <Link href="https://mikewesthad.github.io/uic-gameplay-spring2017/">Class Site</Link>)
+            at University of Illinois Chicago.
           </li>
           <li>
             Creative Coding Workshops at Uptake and Lafayette College (
-            <a href="https://github.com/mikewesthad/lafayette-creative-coding-p5-workshop">
+            <Link href="https://github.com/mikewesthad/lafayette-creative-coding-p5-workshop">
               materials
-            </a>
+            </Link>
             ).
           </li>
         </ul>

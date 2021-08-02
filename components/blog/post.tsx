@@ -1,3 +1,4 @@
+import Link from "components/link";
 import Image from "next/image";
 import css from "./post.module.scss";
 
@@ -11,13 +12,13 @@ interface PostProps {
 function Post({ imageSrc, title, description, href }: PostProps) {
   return (
     <li className={css.post}>
-      <a href={href} className={css.imageLink}>
+      <Link showExternalIcon={false} href={href} className={css.imageLink}>
         <Image src={imageSrc} alt={`Preview of ${title}`} objectFit="cover" placeholder="blur" />
-      </a>
+      </Link>
       <div className={css.details}>
         <h2 className="text--md">{title}</h2>
         <p>{description}</p>
-        <a href={href}>Read →</a>
+        <Link href={href}>Read on Medium</Link>
       </div>
     </li>
   );
