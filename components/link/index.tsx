@@ -1,6 +1,6 @@
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 import { IoOpenOutline } from "react-icons/io5";
-import css from "./link.module.scss";
+import css from "./index.module.scss";
 
 interface LinkProps extends NextLinkProps {
   children: React.ReactNode;
