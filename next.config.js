@@ -49,6 +49,9 @@ const ghRedirects = [
   "phaser-tiled-hull",
   "emojify",
   "frontend-javascript-demos",
+  "saic-webart",
+  "uic-interactive3d-spring2017",
+  "uic-gameplay-spring2017",
 ];
 
 module.exports = {
