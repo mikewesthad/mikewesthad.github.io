@@ -2,6 +2,7 @@ import Link from "components/link";
 import PageTitle from "components/page-title";
 import Container from "components/container";
 import Main from "components/main";
+import PageDescription from "components/page-description";
 
 const PortfolioPage = () => {
   return (
