@@ -35,9 +35,15 @@ function Phaser() {
       <ImageGallery images={[image1, image3, image2, image4]} />
       <Section>
         <YouTubeEmbed width="100%" height="400" videoId="8OP9vCfPxIU" />
+        <div style={{ fontStyle: "italic", textAlign: "center" }}>
+          *Note: this video does not have sound.
+        </div>
       </Section>
       <Section>
         <YouTubeEmbed width="100%" height="400" videoId="VcAhOZSEwDY" />
+        <div style={{ fontStyle: "italic", textAlign: "center" }}>
+          *Note: this video does not have sound.
+        </div>
       </Section>
     </ProjectPage>
   );
