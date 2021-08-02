@@ -46,6 +46,7 @@ small {
   font-size: var(--text-xs);
 }
 
-p {
+p,
+li {
   line-height: var(--body-line-height);
 }
