@@ -34,17 +34,18 @@ function TeachingPage() {
           <li>Code Sprints at Columbia College Chicago.</li>
           <li>Game Engine Scripting at Columbia College Chicago.</li>
           <li>
-            Web Art (<a href="https://www.mikewesthad.com/saic-webart/">Class Site</a>) at The
+            Web Art (<a href="https://mikewesthad.github.io/saic-webart/">Class Site</a>) at The
             School of the Art Institute of Chicago.
           </li>
           <li>
             Interactive 3D (
-            <a href="https://www.mikewesthad.com/uic-interactive3d-spring2017/">Class Site</a>) at
+            <a href="https://mikewesthad.github.io/uic-interactive3d-spring2017/">Class Site</a>) at
             University of Illinois Chicago.
           </li>
           <li>
-            Game Play (<a href="https://www.mikewesthad.com/uic-gameplay-spring2017/">Class Site</a>
-            ) at University of Illinois Chicago.
+            Game Play (
+            <a href="https://mikewesthad.github.io/uic-gameplay-spring2017/">Class Site</a>) at
+            University of Illinois Chicago.
           </li>
           <li>
             Creative Coding Workshops at Uptake and Lafayette College (
