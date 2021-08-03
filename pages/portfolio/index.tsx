@@ -3,12 +3,18 @@ import PageTitle from "components/page-title";
 import Container from "components/container";
 import Main from "components/main";
 import PageDescription from "components/page-description";
+import SocialPageMeta from "components/social-page-meta";
 
 const PortfolioPage = () => {
   return (
     <Container>
       <PageTitle>Portfolio</PageTitle>
-      <PageDescription>Michael Hadley&apos;s portfolio.</PageDescription>
+      <SocialPageMeta
+        title="Portfolio"
+        description="Michael Hadley's portfolio."
+        path="/portfolio"
+      />
+
       <Main>
         <h1>Portfolio</h1>
         <p>
