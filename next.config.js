@@ -68,4 +68,5 @@ module.exports = {
     }));
     return [...old, ...gh];
   },
+  siteUrl: "https://www.mikewesthad.com",
 };
