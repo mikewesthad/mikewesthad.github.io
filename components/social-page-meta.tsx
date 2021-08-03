@@ -7,15 +7,17 @@ interface SocialPageMetaProps {
   title: string;
   description: string;
   path: string;
-  image: string | StaticImageData;
+  image?: string | StaticImageData;
 }
 
 function SocialPageMeta({ title, description, image, path }: SocialPageMetaProps) {
   let absoluteImageUrl;
-  if (typeof image === "string") {
-    absoluteImageUrl = image;
-  } else {
-    absoluteImageUrl = `${siteUrl}${image.src}`;
+  if (image) {
+    if (typeof image === "string") {
+      absoluteImageUrl = image;
+    } else {
+      absoluteImageUrl = `${siteUrl}${image.src}`;
+    }
   }
 
   const url = `${siteUrl}${path}`;
@@ -24,7 +26,7 @@ function SocialPageMeta({ title, description, image, path }: SocialPageMetaProps
     <Head>
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={absoluteImageUrl} />
+      {absoluteImageUrl && <meta property="og:image" content={absoluteImageUrl} />}
       <meta property="og:url" content={url} />
       <meta property="og:site_name" content="mikewesthad" />
     </Head>
