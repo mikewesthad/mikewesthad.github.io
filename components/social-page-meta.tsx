@@ -1,5 +1,7 @@
-import { siteUrl } from "../next.config";
 import Head from "next/head";
+import getConfig from "next/config";
+
+const siteUrl = getConfig().publicRuntimeConfig.siteUrl;
 
 interface SocialPageMetaProps {
   title: string;
