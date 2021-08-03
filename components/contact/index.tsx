@@ -14,7 +14,7 @@ function Contact({}: ContactProps) {
   return (
     <Main>
       <SocialPageMeta
-        title="Home"
+        title="Contact"
         description="Get in touch with Michael Hadley."
         image={ogImage}
         path="/contact"
