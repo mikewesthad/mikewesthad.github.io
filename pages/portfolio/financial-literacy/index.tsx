@@ -10,10 +10,17 @@ import image6 from "./images/credit-4.png";
 import image7 from "./images/budget-1.png";
 import image8 from "./images/budget-2.png";
 import Link from "components/link";
+import SocialPageMeta from "components/social-page-meta";
 
 function Phaser() {
   return (
     <ProjectPage pageTitle="Financial Literacy Games" backTo="dev">
+      <SocialPageMeta
+        title="Financial Literacy Games"
+        description="I designed and developed a series of serious games (JS, React) for them around financial literacy, which have reached thousands of Chicago youth so far."
+        image={image7}
+        path="/portfolio/financial-literacy"
+      />
       <Section>
         <h1>Financial Literacy Games</h1>
       </Section>
