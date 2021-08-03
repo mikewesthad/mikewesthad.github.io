@@ -8,10 +8,17 @@ import image4 from "./images/ofbook-6.png";
 import image5 from "./images/fig-2.png";
 import image6 from "./images/fig-3.png";
 import Link from "components/link";
+import SocialPageMeta from "components/social-page-meta";
 
 function OFBook() {
   return (
     <ProjectPage pageTitle="ofBook" backTo="dev">
+      <SocialPageMeta
+        title="ofBook"
+        description="I wrote two chapters on graphics for ofBook, an open source book on creative coding in C++."
+        image={image3}
+        path="/portfolio/ofbook"
+      />
       <Section>
         <h1>ofBook</h1>
       </Section>

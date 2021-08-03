@@ -7,10 +7,17 @@ import image4 from "./images/togetheroo-4.png";
 import YouTubeEmbed from "components/youtube-embed";
 import Section from "components/container/section";
 import Link from "components/link";
+import SocialPageMeta from "components/social-page-meta";
 
 function Phaser() {
   return (
     <ProjectPage pageTitle="Togetheroo" backTo="dev">
+      <SocialPageMeta
+        title="Togetheroo"
+        description="I worked with Bart Yeary to create a real-time video chat platform with embedded educational games and tools."
+        image={image1}
+        path="/portfolio/togetheroo"
+      />
       <Section>
         <h1>Togetheroo</h1>
       </Section>

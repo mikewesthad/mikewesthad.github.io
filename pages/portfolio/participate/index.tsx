@@ -12,10 +12,17 @@ import quizImage1 from "./images/quiz-1.png";
 import quizImage2 from "./images/quiz-2.png";
 import quizImage4 from "./images/quiz-4.png";
 import quizImage7 from "./images/quiz-7.png";
+import SocialPageMeta from "components/social-page-meta";
 
 function Participate() {
   return (
     <ProjectPage pageTitle="Educator Tools for Participate" backTo="dev">
+      <SocialPageMeta
+        title="Educator Tools for Participate"
+        description=" I designed and developed two serious games for educators (React, JS) that drew new users into the Participate platform."
+        image={quizImage2}
+        path="/portfolio/participate"
+      />
       <Section>
         <h1>Educator Tools for Participate</h1>
       </Section>

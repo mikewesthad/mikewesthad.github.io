@@ -6,10 +6,17 @@ import gamefrootImage5 from "./images/gamefroot-5.png";
 import gamefrootImage6 from "./images/gamefroot-6.png";
 import Section from "components/container/section";
 import Link from "components/link";
+import SocialPageMeta from "components/social-page-meta";
 
 function Gamefroot() {
   return (
     <ProjectPage pageTitle="Gamefroot" backTo="dev">
+      <SocialPageMeta
+        title="Gamefroot"
+        description="I rebuilt and modernized Gamefroot's game editor from the ground up (TypeScript, Phaser game engine, React)."
+        image={gamefrootImage1}
+        path="/portfolio/gamefroot"
+      />
       <Section>
         <h1>Gamefroot</h1>
       </Section>

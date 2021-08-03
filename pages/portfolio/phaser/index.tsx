@@ -8,10 +8,17 @@ import image5 from "./images/phaser-example-3.png";
 import image6 from "./images/phaser-example-4.png";
 import Section from "components/container/section";
 import Link from "components/link";
+import SocialPageMeta from "components/social-page-meta";
 
 function Phaser() {
   return (
     <ProjectPage pageTitle="Phaser" backTo="dev">
+      <SocialPageMeta
+        title="Phaser"
+        description="I designed and modernized key parts of the API for the popular JS game engine Phaser (>30K GitHub stars)."
+        image={image1}
+        path="/portfolio/phaser"
+      />
       <Section>
         <h1>Phaser</h1>
       </Section>
