@@ -6,10 +6,18 @@ import image1 from "./images/codevolve-1.png";
 import image2 from "./images/reading-html-3.png";
 import image3 from "./images/reading-css-09.png";
 import Link from "components/link";
+import SocialPageMeta from "components/social-page-meta";
 
 function Edovo() {
   return (
     <ProjectPage pageTitle="Edovo Web Dev Courses" backTo="dev">
+      <SocialPageMeta
+        title="Edovo Web Dev Courses"
+        description="I created a pair of courses to help incarcerated individuals – who have no prior coding
+        experience – start building employable, front-end web development skills."
+        image={image3}
+        path="/portfolio/edovo"
+      />
       <Section>
         <h1>Edovo Web Dev Courses</h1>
       </Section>

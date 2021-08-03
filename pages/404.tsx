@@ -1,14 +1,20 @@
 import Section from "components/container/section";
 import Link from "components/link";
 import Main from "components/main";
-import PageDescription from "components/page-description";
 import PageTitle from "components/page-title";
+import SocialPageMeta from "components/social-page-meta";
+import ogImage from "../images/og-404.png";
 
 const NotFoundPage = () => {
   return (
     <Main>
       <PageTitle>Not Found!</PageTitle>
-      <PageDescription>The page you were looking for cannot be found.</PageDescription>
+      <SocialPageMeta
+        title="404"
+        description="The page you were looking for cannot be found."
+        image={ogImage}
+        path="/404"
+      />
 
       <Section>
         <h1>Page Not Found</h1>

@@ -11,13 +11,19 @@ import ArtDevShowcase from "components/art-dev-showcase";
 import Section from "components/container/section";
 import Link from "components/link";
 import Main from "components/main";
-import PageDescription from "components/page-description";
+import SocialPageMeta from "components/social-page-meta";
+import ogImage from "images/og-dev.png";
 
 function DevelopmentPage() {
   return (
     <Main>
       <PageTitle>Development</PageTitle>
-      <PageDescription>Michael Hadley&apos;s developer portfolio.</PageDescription>
+      <SocialPageMeta
+        title="Development Portfolio"
+        description="Michael Hadley's portfolio as a developer."
+        image={ogImage}
+        path="/portfolio/dev"
+      />
       <Section>
         <h1>Development</h1>
         <p>
