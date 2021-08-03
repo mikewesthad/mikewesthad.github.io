@@ -24,10 +24,10 @@ const NotFoundPage = () => {
             👀
           </span>{" "}
           .
-          <p>
-            Try heading back to the <Link href="/">home page</Link>, or if something is wrong, get
-            in <Link href="/contact">touch</Link>.
-          </p>
+        </p>
+        <p>
+          Try heading back to the <Link href="/">home page</Link>, or if something is wrong, get in{" "}
+          <Link href="/contact">touch</Link>.
         </p>
       </Section>
     </Main>
