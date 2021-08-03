@@ -1,7 +1,8 @@
 import Blog from "components/blog";
 import Main from "components/main";
-import PageDescription from "components/page-description";
 import PageTitle from "components/page-title";
+import SocialPageMeta from "components/social-page-meta";
+import ogImage from "../components/technical-writing-showcase/images/blog-1.png";
 
 interface BlogPageProps {}
 
@@ -9,7 +10,12 @@ function BlogPage({}: BlogPageProps) {
   return (
     <Main>
       <PageTitle>Blog</PageTitle>
-      <PageDescription>Michael Hadley&apos;s personal coding blog.</PageDescription>
+      <SocialPageMeta
+        title="Blog"
+        description="Michael Hadley's personal coding blog."
+        image={ogImage}
+        path="/contact"
+      />
       <Blog />
     </Main>
   );
