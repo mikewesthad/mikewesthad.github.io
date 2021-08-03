@@ -3,7 +3,8 @@ import PageTitle from "components/page-title";
 import Section from "components/container/section";
 import Form from "./form";
 import Main from "components/main";
-import PageDescription from "components/page-description";
+import SocialPageMeta from "components/social-page-meta";
+import ogImage from "./og-contact-image.png";
 
 interface ContactProps {}
 
@@ -12,8 +13,13 @@ function Contact({}: ContactProps) {
 
   return (
     <Main>
+      <SocialPageMeta
+        title="Home"
+        description="Get in touch with Michael Hadley."
+        image={ogImage}
+        path="/contact"
+      />
       <PageTitle>Contact</PageTitle>
-      <PageDescription>Get in touch with Michael Hadley to hire him.</PageDescription>
 
       <Section>
         <h1>Get in Touch</h1>
