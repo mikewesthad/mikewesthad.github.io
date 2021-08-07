@@ -10,6 +10,7 @@ import "../global-styles/index.scss";
 import SiteLayout from "components/site-layout";
 import Meta from "components/meta";
 import useFoucFix from "../utils/use-fouc-fix";
+import { GoogleAnalytics } from "@blackbox-vision/next-google-analytics";
 
 export default function MyApp({ Component, pageProps, router }: AppProps) {
   // "Fix" for CSS module styling being unloaded in transitions. Hopefully, this
@@ -21,6 +22,7 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <SiteLayout pageKey={pageKey}>
       <Meta />
+      <GoogleAnalytics id="UA-51816945-1" />
       <Component {...pageProps} />
     </SiteLayout>
   );

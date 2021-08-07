@@ -10,6 +10,7 @@
     "tsc": "tsc"
   },
   "dependencies": {
+    "@blackbox-vision/next-google-analytics": "^0.1.1",
     "@fontsource/raleway": "^4.5.0",
     "@formspree/react": "^2.2.3",
     "@react-hook/window-size": "^3.0.7",
