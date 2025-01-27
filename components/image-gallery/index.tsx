@@ -1,6 +1,7 @@
 import Section from "components/container/section";
 import ExpandableImage from "components/expandable-image";
 import css from "./index.module.scss";
+import { StaticImageData } from "next/image";
 
 interface ImageGalleryProps {
   images: StaticImageData[];
