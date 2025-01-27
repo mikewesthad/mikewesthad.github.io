@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import ExpandedImage from "./expanded-image";
 import css from "./index.module.scss";
 
