@@ -4,7 +4,7 @@
  */
 
 import React from "react";
-import { SubmissionResponse, SubmissionData } from "@formspree/core/forms";
+import { useForm } from "@formspree/react";
 
 interface ErrorPayload {
   field?: string;
@@ -12,16 +12,12 @@ interface ErrorPayload {
   message: string;
 }
 
+type useFormReturn = ReturnType<typeof useForm>;
+
 declare type FormEvent = React.FormEvent<HTMLFormElement>;
 
-declare type SubmitHandler = (
-  submissionData: FormEvent | SubmissionData
-) => Promise<SubmissionResponse>;
+declare type SubmitHandler = useFormReturn[1];
 
-declare type UseFormState = {
-  submitting: boolean;
-  succeeded: boolean;
-  errors: ErrorPayload[];
-};
+declare type UseFormState = useFormReturn[0];
 
 export type { ErrorPayload, FormEvent, SubmitHandler, UseFormState };

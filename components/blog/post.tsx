@@ -1,5 +1,5 @@
 import Link from "components/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import css from "./post.module.scss";
 
 interface PostProps {

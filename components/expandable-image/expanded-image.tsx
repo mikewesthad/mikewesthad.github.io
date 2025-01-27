@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useWindowSize } from "@react-hook/window-size/throttled";
 import { IoMdClose } from "react-icons/io";
 import IconButton from "./icon-button";

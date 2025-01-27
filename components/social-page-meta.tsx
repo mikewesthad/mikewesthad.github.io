@@ -1,5 +1,6 @@
 import Head from "next/head";
 import getConfig from "next/config";
+import { StaticImageData } from "next/image";
 
 const siteUrl = getConfig().publicRuntimeConfig.siteUrl;
 
