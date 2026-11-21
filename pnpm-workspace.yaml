@@ -1,2 +1,17 @@
+# Dependency install scripts are blocked unless listed here as `true`.
+# @parcel/watcher (optional dep of sass) ships prebuilt binaries, so its script isn't needed.
 allowBuilds:
-  '@parcel/watcher': false
+  "@parcel/watcher": false
+
+# Supply-chain hardening. Set here (not just in a global pnpm config) so it
+# applies on every machine, on Vercel and to Dependabot.
+
+# Refuse package versions published less than 7 days ago (value is in minutes).
+# Dependabot's `cooldown` in .github/dependabot.yml matches this.
+minimumReleaseAge: 10080
+
+# Fail install if a package's publish trust level (e.g. provenance) drops
+# compared to its earlier releases.
+trustPolicy: no-downgrade
+# Skip the trust check for versions published more than 30 days ago (value is in minutes).
+trustPolicyIgnoreAfter: 43200
