@@ -10,18 +10,18 @@ Built with:
 
 ## Usage
 
-To run the site under "development" mode, make sure you have node & npm installed, and then run:
+To run the site under "development" mode, make sure you have the node version in `.nvmrc` (`nvm use`) and pnpm installed, and then run:
 
 ```
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 To run the site under "production" mode, run:
 
 ```
-npm run build
-npm run start
+pnpm build
+pnpm start
 ```
 
 ## Deploying
