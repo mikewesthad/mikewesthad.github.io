@@ -68,7 +68,4 @@ module.exports = {
     }));
     return [...old, ...gh];
   },
-  publicRuntimeConfig: {
-    siteUrl: "https://www.mikewesthad.com",
-  },
 };

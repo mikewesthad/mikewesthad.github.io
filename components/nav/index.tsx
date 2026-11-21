@@ -1,19 +1,15 @@
 import { useWindowWidth } from "@react-hook/window-size/throttled";
-import { useState } from "react";
-import { useEffect } from "react";
 import DesktopNav from "./desktop-nav";
 import MobileNav from "./mobile-nav";
 import css from "./index.module.scss";
 import Link from "components/link";
 import SkipToMainLink from "components/skip-to-main-link";
+import useIsClient from "utils/use-is-client";
 
 function Nav() {
   const width = useWindowWidth({ initialWidth: undefined });
 
-  const [isRendered, setIsRendered] = useState(false);
-  useEffect(() => {
-    setIsRendered(true);
-  }, []);
+  const isRendered = useIsClient();
 
   let navContents;
   if (isRendered) {

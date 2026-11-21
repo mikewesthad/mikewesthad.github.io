@@ -13,7 +13,13 @@ function Post({ imageSrc, title, description, href }: PostProps) {
   return (
     <li className={css.post}>
       <Link showExternalIcon={false} href={href} className={css.imageLink}>
-        <Image src={imageSrc} alt={`Preview of ${title}`} objectFit="cover" placeholder="blur" />
+        <Image
+          src={imageSrc}
+          alt={`Preview of ${title}`}
+          sizes="(max-width: 500px) 100vw, 40vw"
+          style={{ maxWidth: "100%", height: "auto", objectFit: "cover" }}
+          placeholder="blur"
+        />
       </Link>
       <div className={css.details}>
         <h2 className="text--md">{title}</h2>

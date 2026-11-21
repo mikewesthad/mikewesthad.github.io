@@ -29,8 +29,9 @@ function Home({}: HomeProps) {
           <Image
             src={profileImage}
             alt="Mike Hadley"
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="10rem"
+            style={{ objectFit: "cover" }}
             placeholder="blur"
           />
         </figure>

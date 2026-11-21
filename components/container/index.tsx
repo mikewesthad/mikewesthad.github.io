@@ -4,7 +4,7 @@ import css from "./index.module.scss";
 interface ContainerProps {
   children: React.ReactNode;
   className?: string;
-  tagName?: keyof JSX.IntrinsicElements;
+  tagName?: keyof React.JSX.IntrinsicElements;
   fullWidth?: boolean;
 }
 

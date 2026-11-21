@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 import Nav from "components/nav";
 import Footer from "components/footer";
 import css from "./index.module.scss";
@@ -14,7 +14,7 @@ function SiteLayout({ pageKey, children }: SiteLayoutProps) {
   return (
     <div className={css.layout}>
       <Nav />
-      <AnimatePresence exitBeforeEnter initial={false} onExitComplete={scrollToTopLeft}>
+      <AnimatePresence mode="wait" initial={false} onExitComplete={scrollToTopLeft}>
         <motion.div
           key={pageKey}
           className={css.layoutContents}

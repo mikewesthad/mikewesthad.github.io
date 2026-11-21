@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .form {
   fieldset {
     margin: 0;
@@ -48,15 +50,15 @@
     border: 2px solid transparent;
 
     &:hover {
-      background-color: darken(#a500ad, 8%);
+      background-color: color.adjust(#a500ad, $lightness: -8%);
     }
 
     &:active {
-      background-color: darken(#a500ad, 15%);
+      background-color: color.adjust(#a500ad, $lightness: -15%);
     }
 
     &:focus {
-      border: 2px solid darken(#a500ad, 20%);
+      border: 2px solid color.adjust(#a500ad, $lightness: -20%);
     }
   }
 }
