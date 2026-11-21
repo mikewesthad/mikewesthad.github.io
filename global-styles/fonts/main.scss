@@ -2,7 +2,9 @@
 
 @font-face {
   font-family: "Big John";
-  src: url("big_john-webfont.woff2") format("woff2"), url("big_john-webfont.woff") format("woff");
+  src:
+    url("big_john-webfont.woff2") format("woff2"),
+    url("big_john-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
