@@ -7,7 +7,7 @@ const useFoucFix = () =>
   useEffect(() => {
     // Gather all server-side rendered stylesheet entries.
     let ssrPageStyleSheetsEntries = Array.from(
-      document.querySelectorAll('link[rel="stylesheet"][data-n-p]')
+      document.querySelectorAll('link[rel="stylesheet"][data-n-p]'),
     ).map((element) => ({
       element,
       href: element.getAttribute("href"),

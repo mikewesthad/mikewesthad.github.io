@@ -40,6 +40,6 @@ if (typeof window !== "undefined") {
                                                                        
                         Thanks for stopping by!                        
                                                                        `,
-    "font-weight: bold; font-size: 12px; color: #fcbfff; text-shadow: 1px 1px 0px #640069;"
+    "font-weight: bold; font-size: 12px; color: #fcbfff; text-shadow: 1px 1px 0px #640069;",
   );
 }
