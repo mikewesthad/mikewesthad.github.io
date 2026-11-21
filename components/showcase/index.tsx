@@ -13,13 +13,14 @@ function ShowcaseItem({ image, title, subtitle, href }: ShowcaseItemProps) {
   const isExternalLink = href.startsWith("http://") || href.startsWith("https://");
   return (
     <li className={css.item}>
-      <Link className="unstyled-link" href={href}>
+      <Link className="unstyled-link" href={href} showExternalIcon={false}>
         <figure className={css.figure}>
           <Image
             src={image}
             alt={`${title} - ${subtitle}`}
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="(max-width: 600px) 100vw, 50vw"
+            style={{ objectFit: "cover" }}
             placeholder="blur"
           />
           <figcaption className={css.itemCaption}>

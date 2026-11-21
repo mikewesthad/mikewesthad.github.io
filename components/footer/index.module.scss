@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .footerContainer {
   text-align: center;
   font-size: var(--text-sm);
@@ -14,7 +16,7 @@
   display: block;
   margin: var(--space-xxxs) auto;
   width: 3rem;
-  border-top: 1px solid lighten(#595959, 30%);
+  border-top: 1px solid color.adjust(#595959, $lightness: 30%);
 }
 
 .socialLinks {

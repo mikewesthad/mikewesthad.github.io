@@ -12,7 +12,9 @@ function RandomEmoji({ emoji, ...props }: RandomEmojiProps) {
   const [randEmoji, setRandEmoji] = useState<string>("");
 
   useEffect(() => {
+    // Picked after mount (not during render) so SSR and hydration markup match.
     const index = randInt(0, emoji.length - 1);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setRandEmoji(emoji[index]);
   }, [emoji]);
 

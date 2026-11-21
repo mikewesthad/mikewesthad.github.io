@@ -27,10 +27,8 @@ function Link({
   }
 
   return (
-    <NextLink scroll={false} href={href} {...otherProps}>
-      <a className={className} {...anchorProps}>
-        {children}
-      </a>
+    <NextLink scroll={false} href={href} className={className} {...anchorProps} {...otherProps}>
+      {children}
     </NextLink>
   );
 }

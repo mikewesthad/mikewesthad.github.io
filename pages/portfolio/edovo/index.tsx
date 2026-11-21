@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ProjectPage from "components/project-page";
 import Section from "components/container/section";
 import ImageGallery from "components/image-gallery";

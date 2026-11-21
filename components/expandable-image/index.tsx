@@ -20,8 +20,8 @@ function ExpandableImage({ src }: ExpandableImageProps) {
         src={src}
         onClick={onClick}
         className={css.expandableImage}
-        layout="responsive"
-        objectFit="cover"
+        sizes="(max-width: 950px) 100vw, 50vw"
+        style={{ display: "block", width: "100%", height: "auto" }}
         placeholder="blur"
         alt=""
       />

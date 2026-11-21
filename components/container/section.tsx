@@ -6,7 +6,7 @@ interface SectionProps {
   className?: string;
   children: React.ReactNode;
   fullWidth?: boolean;
-  tagName?: keyof JSX.IntrinsicElements;
+  tagName?: keyof React.JSX.IntrinsicElements;
 }
 
 function Section({ children, className, tagName = "section", fullWidth = false }: SectionProps) {

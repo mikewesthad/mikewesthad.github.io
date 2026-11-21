@@ -1,6 +1,6 @@
 import cn from "classnames";
 import { MouseEventHandler, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, type Transition } from "motion/react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { GitHubIconLink, LinkedInIconLink, YouTubeIconLink } from "components/social-links";
 import NavLink from "./nav-link";
@@ -12,7 +12,7 @@ const animStates = {
   closed: { opacity: 0, translateX: "100%" },
 };
 const overlayAnimStates = { open: { opacity: 1 }, closed: { opacity: 0 } };
-const transition = { type: "spring", bounce: 0, duration: 0.4 };
+const transition: Transition = { type: "spring", bounce: 0, duration: 0.4 };
 
 interface MobileNavProps {}
 
