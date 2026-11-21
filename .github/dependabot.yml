@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" # Also handles pnpm (pnpm-lock.yaml)
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # Match pnpm's minimumReleaseAge (7 days) so proposed versions can install.
+    cooldown:
+      default-days: 7
+    groups:
+      # Batch non-breaking updates into a single weekly PR.
+      minor-and-patch:
+        update-types: ["minor", "patch"]
+    ignore:
+      # Tracks the Node major pinned in .nvmrc / engines; bump alongside Node.
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
